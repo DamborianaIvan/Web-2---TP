@@ -1,0 +1,25 @@
+.banner {
+    height: 500px;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/banner.jpg);
+}
+
+.redes-sociales {
+    font-size: 40px;
+}
+
+.fa-facebook {
+    color: white;
+    border: blue;
+}
+
+.fa-instagram {
+    color: coral;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
