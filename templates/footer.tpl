@@ -5,7 +5,7 @@
     <a class="text-end" href="#"><i class="fa fa-facebook"></i></a>
 </div>
 <p class="text-center">Telofono: 2156406546</p>
-<p class="text-center">Email: ventademotos@motosventa.com</p>
+<p class="text-center">Email: ventaderopa@ropaventa.com</p>
 </footer>
 
 

@@ -12,7 +12,7 @@
         {foreach from=$Productos item=$Producto}
             <div class="col-3">
                 <div class="card mb-3">     
-                    <img src="img/banner.jpg" class="card-img-top" alt="...">
+                    <img src="img/remera_adidas_negra.jpg" class="card-img-top" alt="remera adidas">
                     <div class="card-body">
                         <h5 class="card-title">{$Producto.nombre_prod}</h5>
                         <p class="card-text">{$Producto.descripcion_prod}</p>

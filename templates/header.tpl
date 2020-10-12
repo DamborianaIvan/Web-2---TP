@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Moto Store</title>
+    <title>Tienda Online</title>
 
 </head>
 
@@ -15,7 +15,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
         <div>
-            <a class="navbar-brand" href="#">Moto Store</a>
+            <a class="navbar-brand" href="#">Tienda Online</a>
         </div>
         <div>
             <p class="fecha">1/9/2020</p>
