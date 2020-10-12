@@ -26,7 +26,7 @@
         break;
         case 'productos' :
             $controller = new ProductosPageController();
-            $controller->GetProductos();
+            $controller->GetPageProductos();
     }
         // {
         //         $partesURL = explode("/", $action);

@@ -1,26 +1,28 @@
 
 <?php
 require_once ".\Models\ProductosModel.php";
+require_once ".\Models\CategoriasModel.php";
 require_once ".\Views\ProductosView.php";
 
 
 class ProductosPageController{
 
     private $modelProductos;
+    private $modelCategorias;
     private $view;
 
 	function __construct(){
-
-
         $this->modelProductos = new ProductosModel();
+        $this->modelCategorias = new CategoriasModel();
         $this->view = new ProductosView();
     }
 
 
     //Yo desde el menu que obtengo en esta funcion de abajo, con los datos de $menu puedo armar la vista
-    public function GetProductos(){
+    public function GetPageProductos(){
         $productos = $this->modelProductos->GetProductos();     
-        $this->view->DisplayProductosPage($productos);
+        $categorias = $this->modelCategorias->GetCategorias();
+        $this->view->DisplayProductosPage($productos,$categorias);
     }
 
 
