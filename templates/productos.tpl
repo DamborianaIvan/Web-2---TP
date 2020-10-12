@@ -1,8 +1,8 @@
 {include file="header.tpl"}
-<div class="container mt-5 border border-dark">
-    <h1 class="text-center mt-5">Productos</h1>
+<div class="container mt-5 border border-dark contenedor-prod">
+    <h1 class="text-center mt-5 text-white">Productos</h1>
     <div class="container text-center">
-        <select name="select">
+        <select class="browser-default custom-select w-25" name="select">
             {foreach from=$Categorias item=$Categoria}
                 <option value={$Categoria.nombre_cat}>{$Categoria.nombre_cat}</option> 
             {/foreach}
@@ -11,8 +11,8 @@
     <div class="row justify-content-around mt-4">
         {foreach from=$Productos item=$Producto}
             <div class="col-3">
-                <div class="card mb-3">     
-                    <img src="img/remera_adidas_negra.jpg" class="card-img-top" alt="remera adidas">
+                <div class="card mb-3 text-center">     
+                    <img src="img/remera_adidas_negra.jpg" class="card-img-top img-prod" alt="remera adidas">
                     <div class="card-body">
                         <h5 class="card-title">{$Producto.nombre_prod}</h5>
                         <p class="card-text">{$Producto.descripcion_prod}</p>

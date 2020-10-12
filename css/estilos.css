@@ -27,3 +27,16 @@ footer p {
     font-weight: bold;
     font-size: 15px;
 }
+.contenedor-prod{
+    background-color: #053779;
+    
+}
+.card{
+    width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card:hover  {
+    width: 350px;
+}s
