@@ -29,6 +29,7 @@ footer p {
 }
 .contenedor-prod{
     background-color: #053779;
+   
     
 }
 .card{
@@ -39,4 +40,11 @@ footer p {
 }
 .card:hover  {
     width: 350px;
-}s
+}
+.card-img{
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
+}
+.card-img:hover{
+    border: 2px solid black;
+}
