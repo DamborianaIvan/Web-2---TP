@@ -27,7 +27,8 @@ class ProductosPageController{
     public function GetProductosCat($id_categoria){
         $productos = $this->modelProductos->GetProductosByCat($id_categoria);     
         $categorias = $this->modelCategorias->GetCategorias();
-        $this->view->DisplayProductosPage($productos,$categorias);
+        $this->view->DisplayProductosPage($productos,$categorias);  
+       
     }
 
 

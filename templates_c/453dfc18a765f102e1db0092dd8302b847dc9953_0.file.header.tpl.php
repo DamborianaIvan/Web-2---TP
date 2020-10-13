@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-13 20:37:11
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 00:45:50
   from 'C:\xamppp\htdocs\TPWEB2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f85f3d70a3138_82409930',
+  'unifunc' => 'content_5f862e1e3102a0_48615903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '453dfc18a765f102e1db0092dd8302b847dc9953' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\header.tpl',
-      1 => 1602614227,
+      1 => 1602629123,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f85f3d70a3138_82409930 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f862e1e3102a0_48615903 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +31,7 @@ function content_5f85f3d70a3138_82409930 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <base href="'.BASE_URL.'">
+
     
     <title>Tienda Online</title>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-13 20:29:25
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 00:39:22
   from 'C:\xamppp\htdocs\TPWEB2\templates\productos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f85f2058fdf57_96424477',
+  'unifunc' => 'content_5f862c9a297b60_42391662',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '793415bbb543fc53d5c0d3cc3ced34f9a3f09339' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\productos.tpl',
-      1 => 1602613764,
+      1 => 1602628561,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f85f2058fdf57_96424477 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f862c9a297b60_42391662 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container-fluid mt-5 border border-dark">
@@ -30,14 +30,14 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     <div class="container text-center">
     <h3 class="mt-5">Categorias</h3>
     <ul class="d-flex justify-content-between lista-cat">
-        <li><a href="">Todos</a></li>
+        <li><a href="productos">Todos</a></li>
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Categorias']->value, 'Categoria');
 $_smarty_tpl->tpl_vars['Categoria']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Categoria']->value) {
 $_smarty_tpl->tpl_vars['Categoria']->do_else = false;
 ?>
-            <li><a href="mostrarProds/<?php echo $_smarty_tpl->tpl_vars['Categoria']->value['id_cat'];?>
+            <li><a href="productosbycategoria/<?php echo $_smarty_tpl->tpl_vars['Categoria']->value['id_cat'];?>
 "><?php echo $_smarty_tpl->tpl_vars['Categoria']->value['nombre_cat'];?>
 </a></li>
         <?php

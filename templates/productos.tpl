@@ -4,9 +4,9 @@
     <div class="container text-center">
     <h3 class="mt-5">Categorias</h3>
     <ul class="d-flex justify-content-between lista-cat">
-        <li><a href="">Todos</a></li>
+        <li><a href="productos">Todos</a></li>
         {foreach from=$Categorias item=$Categoria}
-            <li><a href="mostrarProds/{$Categoria.id_cat}">{$Categoria.nombre_cat}</a></li>
+            <li><a href="productosbycategoria/{$Categoria.id_cat}">{$Categoria.nombre_cat}</a></li>
         {/foreach}
     </ul>
     </div>
