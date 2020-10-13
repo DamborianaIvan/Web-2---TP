@@ -27,6 +27,12 @@
         case 'productos' :
             $controller = new ProductosPageController();
             $controller->GetPageProductos();
+        break;
+        case 'mostrarProds':
+            $controller = new ProductosPageController();
+            $controller->GetProductosCat($partesURL[1]);
+        break;
+
     }
         // {
         //         $partesURL = explode("/", $action);

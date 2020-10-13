@@ -7,7 +7,8 @@
         function __construct(){
             $this->Smarty = new Smarty();
         }   
-        public function DisplayHome(){ 
+        public function DisplayHome($Productos){ 
+            $this->Smarty->assign('Productos', $Productos);
             $this->Smarty->display('templates/home.tpl');
         }
     }
