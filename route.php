@@ -8,10 +8,10 @@
     // require_once "Controllers\RegistroController.php";
     // require_once "Controllers\CategoriaController.php";
     // require_once "Controllers\LoginController.php";
-    
+    define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
     $action = $_GET["action"];
     
-    $partesURL = explode("/", $action);
+
     
 
     
@@ -19,21 +19,36 @@
         $controller = new HomeController();
         $controller->GetHome();
     }
-    switch ($partesURL[0]){
-        case 'home' :
+    if (isset($action)){
+        $partesURL = explode("/", $action);
+        if($partesURL[0] == "home"){
             $controller = new HomeController();
             $controller->GetHome();
-        break;
-        case 'productos' :
+        }elseif ($partesURL[0] == "productos") {
             $controller = new ProductosPageController();
             $controller->GetPageProductos();
-        break;
-        case 'mostrarProds':
+        }elseif ($partesURL[0] == "mostrarProds") {
             $controller = new ProductosPageController();
             $controller->GetProductosCat($partesURL[1]);
-        break;
+            
+        }
 
+
+        // switch ($partesURL[0]){
+        //     case 'home' :
+        //         
+        //     break;
+        //     case 'productos' :
+        //        
+        //     break;
+        //     case 'mostrarProds':
+        //         $controller = new ProductosPageController();
+        //         $controller->GetProductosCat($partesURL[1]);
+        //     break;
+
+        // }
     }
+    var_dump($partesURL);
         // {
         //         $partesURL = explode("/", $action);
         //         if($partesURL[0] == "home"){ 

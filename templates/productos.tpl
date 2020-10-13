@@ -1,16 +1,14 @@
 {include file="header.tpl"}
-<div class="container mt-5 border border-dark">
+<div class="container-fluid mt-5 border border-dark">
     <h1 class="text-center mt-5">Productos</h1>
     <div class="container text-center">
-    <form method="GET">
-        <select name="idCat" id="prodSelect">
-            <option value="0">Todos</option> 
-            {foreach from=$Categorias item=$Categoria}
-                <option value={$Categoria.id_cat}>{$Categoria.nombre_cat}</option> 
-            {/foreach}
-        </select>
-        <button type="submit" id="btnAplicarFiltro">Aplicar</button>
-    </form>
+    <h3 class="mt-5">Categorias</h3>
+    <ul class="d-flex justify-content-between lista-cat">
+        <li><a href="">Todos</a></li>
+        {foreach from=$Categorias item=$Categoria}
+            <li><a href="mostrarProds/{$Categoria.id_cat}">{$Categoria.nombre_cat}</a></li>
+        {/foreach}
+    </ul>
     </div>
     <div class="row justify-content-around mt-4">      
             {foreach from=$Productos item=$Producto}        
