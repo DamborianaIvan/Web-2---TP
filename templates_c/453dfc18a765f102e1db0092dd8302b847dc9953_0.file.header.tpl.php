@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-14 13:58:12
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 18:48:43
   from 'C:\xamppp\htdocs\TPWEB2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f86e7d4e3e5e4_88739366',
+  'unifunc' => 'content_5f872bebef04f6_94985625',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '453dfc18a765f102e1db0092dd8302b847dc9953' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\header.tpl',
-      1 => 1602676687,
+      1 => 1602694121,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f86e7d4e3e5e4_88739366 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f872bebef04f6_94985625 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -39,28 +39,34 @@ function content_5f86e7d4e3e5e4_88739366 (Smarty_Internal_Template $_smarty_tpl)
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
-        <div>
-            <a class="navbar-brand" href="#">Tienda Online</a>
-        </div>
-        <div>
-            <p class="fecha">1/9/2020</p>
-            <p class="ubicacion">Tandil, Argentina</p>
-        </div>
-    </nav>
-    <div class="navbar">
-        <ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
-            <li class="nav-item active border-right border-success">
-                <a class="nav-link" href="<?php echo BASE_URL;?>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
+<div>
+    <a class="navbar-brand" href="#">Tienda Online</a>
+</div>
+<div>
+    <a class="nav-link bg-dark text-light" href="<?php echo BASE_URL;?>
+/login">INGRESAR</a>
+</div>
+<div>
+    <p class="fecha">1/9/2020</p>
+    <p class="ubicacion">Tandil, Argentina</p>
+</div>
+</nav>
+<div class="navbar">
+<ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
+    <li class="nav-item active border-right border-success">
+        <a class="nav-link" href="<?php echo BASE_URL;?>
 /home">Home</a>
-            </li>
-            <li class="nav-item border-right border-success">
-                <a class="nav-link" href="<?php echo BASE_URL;?>
+    </li>
+    <li class="nav-item border-right border-success">
+        <a class="nav-link" href="<?php echo BASE_URL;?>
 /productos">Productos</a>
-            </li>
-            <li class="nav-item border-right border-success">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-        </ul>
-    </div><?php }
+    </li>
+    <li class="nav-item border-right border-success">
+        <a class="nav-link" href="#">Contacto</a>
+    </li>
+    
+</ul>
+</div>
+</header><?php }
 }

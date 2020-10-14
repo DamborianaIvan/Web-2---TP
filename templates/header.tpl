@@ -16,25 +16,30 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
-        <div>
-            <a class="navbar-brand" href="#">Tienda Online</a>
-        </div>
-        <div>
-            <p class="fecha">1/9/2020</p>
-            <p class="ubicacion">Tandil, Argentina</p>
-        </div>
-    </nav>
-    <div class="navbar">
-        <ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
-            <li class="nav-item active border-right border-success">
-                <a class="nav-link" href="{BASE_URL}/home">Home</a>
-            </li>
-            <li class="nav-item border-right border-success">
-                <a class="nav-link" href="{BASE_URL}/productos">Productos</a>
-            </li>
-            <li class="nav-item border-right border-success">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
+<div>
+    <a class="navbar-brand" href="#">Tienda Online</a>
+</div>
+<div>
+    <a class="nav-link bg-dark text-light" href="{BASE_URL}/login">INGRESAR</a>
+</div>
+<div>
+    <p class="fecha">1/9/2020</p>
+    <p class="ubicacion">Tandil, Argentina</p>
+</div>
+</nav>
+<div class="navbar">
+<ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
+    <li class="nav-item active border-right border-success">
+        <a class="nav-link" href="{BASE_URL}/home">Home</a>
+    </li>
+    <li class="nav-item border-right border-success">
+        <a class="nav-link" href="{BASE_URL}/productos">Productos</a>
+    </li>
+    <li class="nav-item border-right border-success">
+        <a class="nav-link" href="#">Contacto</a>
+    </li>
+    
+</ul>
+</div>
+</header>
