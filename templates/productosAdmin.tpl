@@ -14,7 +14,6 @@
     </div>
     <div class="row justify-content-around mt-4">      
             {foreach from=$Productos item=$Producto}        
-               
                     <div class="col-4">
                         <div class="card mb-3">     
                             <img  class="card-img-top" alt="asd">
@@ -23,13 +22,12 @@
                                 <p class="card-text">{$Producto.descripcion_prod}</p>
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">Left</button>
-                                <button type="button" class="btn btn-secondary">Middle</button>
-                                <button type="button" class="btn btn-secondary">Right</button>
+                                <a href="{BASE_URL}/productos/{$Producto.id_producto}" class="btn btn-secondary">Mas</a>
+                                <a href="{BASE_URL}/editarProd" class="btn btn-secondary">Editar</a>
+                                <a href="{BASE_URL}/eliminarProd" class="btn btn-secondary">Eliminar</a>
                             </div>
                         </div>
-                    </div>      
-               
+                    </div>           
             {/foreach}       
     </div>
 </div>

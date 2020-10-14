@@ -17,17 +17,26 @@ class ProductosPageController{
         $this->view = new ProductosView();
     }
 
-
-    //Yo desde el menu que obtengo en esta funcion de abajo, con los datos de $menu puedo armar la vista
+    //Obtengo los productos de la base de datos y los envio a la vista
     public function GetPageProductos(){
         $productos = $this->modelProductos->GetProductos();     
         $categorias = $this->modelCategorias->GetCategorias();
         $this->view->DisplayProductosPage($productos,$categorias);
     }
+
+    //Obtengo un producto x categoria de la base de datos y los envio a la vista
     public function GetProductosCat($id_categoria){
         $productos = $this->modelProductos->GetProductosByCat($id_categoria);     
         $categorias = $this->modelCategorias->GetCategorias();
         $this->view->DisplayProductosPage($productos,$categorias);  
+       
+    }
+
+    //Obtengo un prducto x id de la base de datos y los envio a la vista
+    public function GetProducto($id_prod){
+        $producto = $this->modelProductos->GetProductoById($id_prod); 
+
+        $this->view->DisplayProductoPage($producto);  
        
     }
 

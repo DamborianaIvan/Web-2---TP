@@ -9,7 +9,7 @@ class ProductosModel {
     }
     
 
-    public function GetProductosById($idProducto){
+    public function GetProductoById($idProducto){
         $sentencia = $this->db->prepare("SELECT * FROM producto WHERE id_producto = ? ");
         $sentencia->execute(array($idProducto));
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-13 14:25:22
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 18:01:53
   from 'C:\xamppp\htdocs\TPWEB2\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f859cb2746529_37783772',
+  'unifunc' => 'content_5f8720f13f06d1_73001232',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c36865597e33175db3684cb998a4e4c5496a1f3' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\home.tpl',
-      1 => 1602591918,
+      1 => 1602691310,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f859cb2746529_37783772 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f8720f13f06d1_73001232 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>>
-</header>
+
 <div class="container-fluid banner d-flex justify-content-center align-items-center text-white ">
     <div class="d-flex flex-column align-items-center">
         <h2>Venta de ropa</h2>

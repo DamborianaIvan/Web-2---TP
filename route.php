@@ -28,10 +28,11 @@
         }elseif ($partesURL[0] == "productos") {
             if (isset($partesURL[1])){
                 $controller = new ProductosPageController();
-                $controller->GetPageProductos($partesURL[1]);
+                $controller->GetProducto($partesURL[1]);
+            }else{
+                $controller = new ProductosPageController();
+                $controller->GetPageProductos();
             }
-            $controller = new ProductosPageController();
-            $controller->GetPageProductos();
         }elseif ($partesURL[0] == "productosbycategoria") {
             $controller = new ProductosPageController();
             $controller->GetProductosCat($partesURL[1]);   
@@ -46,7 +47,7 @@
             $controller->GetProductos();
         }
 
-
+        
        
     }
     

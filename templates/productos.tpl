@@ -1,5 +1,5 @@
 {include file="header.tpl"}
-<div class="container-fluid mt-5 border border-dark">
+<div class="container mt-5 border border-dark">
     <h1 class="text-center mt-5">Productos</h1>
     <div class="container text-center">
         <h3 class="mt-5">Categorias</h3>
@@ -13,18 +13,19 @@
         </div>
     </div>
     <div class="row justify-content-around mt-4">      
-            {foreach from=$Productos item=$Producto}        
-               
-                    <div class="col-3">
+            {foreach from=$Productos item=$Producto}                   
+                    <div class="col-4">
                         <div class="card mb-3">     
                             <img  class="card-img-top" alt="asd">
                             <div class="card-body">
                                 <h5 class="card-title">{$Producto.nombre_prod}</h5>
                                 <p class="card-text">{$Producto.descripcion_prod}</p>
                             </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="{BASE_URL}/productos/{$Producto.id_producto}" class="btn btn-secondary">Mostrar mas</a>
+                            </div>
                         </div>
                     </div>      
-               
             {/foreach}       
     </div>
 </div>
