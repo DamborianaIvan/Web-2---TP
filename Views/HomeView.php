@@ -6,6 +6,7 @@
 
         function __construct(){
             $this->Smarty = new Smarty();
+            $this->Smarty->assign('BASE_URL', BASE_URL);
         }   
         public function DisplayHome($Productos){ 
             $this->Smarty->assign('Productos', $Productos);

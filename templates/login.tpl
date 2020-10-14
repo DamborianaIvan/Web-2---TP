@@ -21,9 +21,6 @@
                         </div>
                         <div class="row justify-content-center mt-3">
                             <p>{$Mensaje}</p>
-                            <div >
-                                <a href="registrar" class="text-center">No tienes cuenta ? Registrate</a>
-                            </div>
                         </div>
                         <div class="row d-flex justify-content-center mt-5">
                             <div class="col-xs-4">

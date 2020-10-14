@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-13 23:04:02
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 14:04:27
   from 'C:\xamppp\htdocs\TPWEB2\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f861642eabf15_66385414',
+  'unifunc' => 'content_5f86e94b578e17_68481517',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a518e769d8b852bef9b1e801c754128cf229c320' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\login.tpl',
-      1 => 1602621595,
+      1 => 1602677063,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f861642eabf15_66385414 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f86e94b578e17_68481517 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -47,9 +47,6 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
                         <div class="row justify-content-center mt-3">
                             <p><?php echo $_smarty_tpl->tpl_vars['Mensaje']->value;?>
 </p>
-                            <div >
-                                <a href="registrar" class="text-center">No tienes cuenta ? Registrate</a>
-                            </div>
                         </div>
                         <div class="row d-flex justify-content-center mt-5">
                             <div class="col-xs-4">

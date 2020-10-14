@@ -2,8 +2,9 @@
 <?php
 require_once ".\Models\UsuarioModel.php";
 require_once ".\Views\LoginView.php";
-
-// define('PRODUCTOS', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/productos");
+define('LOGIN', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/login");
+define('PRODUCTOSADMIN', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/productosAdmin");
+define('LOGOUT', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/logout");
 
 class LoginController{
 
@@ -11,7 +12,7 @@ class LoginController{
     private $view;
 
 	function __construct(){
-        $this->modelProductos = new UsuarioModel();
+        $this->modelUsuario= new UsuarioModel();
         $this->view = new LoginView();
     }
 
@@ -33,13 +34,14 @@ class LoginController{
         $user = $_POST["usuarioId"];
         $pass = $_POST["passwordId"];
         $dbUser = $this->modelUsuario->GetUser($user);
+        var_dump($dbUser);
         if(isset($dbUser)){
              //password_verify desencripta la contraseña encriptada guardada en este caso en hash y la compara con la ingresada
-            if(password_verify($pass,$dbUser[0]["clave_usuario"])){
+            if(password_verify($pass,$dbUser[0]["password_user"])){
                 //Redireccionar a Pagina administrador
                 session_start();
                 $_SESSION["User"] = $user;                    
-                header(MENUADMIN);
+                header(PRODUCTOSADMIN);
             }else{
                 //No es correcta la contraseña
                 $this->view->DisplayLogin("Contraseña incorrecta.");

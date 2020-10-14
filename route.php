@@ -2,9 +2,9 @@
     require_once "Controllers\HomeController.php";
     require_once "Controllers\ProductosPageController.php";
     require_once "Controllers\LoginController.php";
+    require_once "Controllers\ProductosAdminController.php";
     // require_once "Controllers\GaleriaController.php";
     // require_once "Controllers\MenuController.php";
-    // require_once "Controllers\MenuAdminController.php";
     // require_once "Controllers\ContactoController.php";
     // require_once "Controllers\RegistroController.php";
     // require_once "Controllers\CategoriaController.php";
@@ -12,7 +12,7 @@
    
     $action = $_GET["action"];
     
-    
+    define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']));
     
 
     
@@ -38,6 +38,12 @@
         }elseif ($partesURL[0] == "login") {
             $controller = new LoginController();
             $controller->GetLogin();   
+        }elseif ($partesURL[0]== "verificarLogin") {
+            $controller = new LoginController();
+            $controller->verificarLogin();
+        }elseif ($partesURL[0]== "productosAdmin") {
+            $controller = new ProductosAdminController();
+            $controller->GetProductos();
         }
 
 

@@ -28,10 +28,10 @@
     <div class="navbar">
         <ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
             <li class="nav-item active border-right border-success">
-                <a class="nav-link" href="home">Home</a>
+                <a class="nav-link" href="{BASE_URL}/home">Home</a>
             </li>
             <li class="nav-item border-right border-success">
-                <a class="nav-link" href="productos">Productos</a>
+                <a class="nav-link" href="{BASE_URL}/productos">Productos</a>
             </li>
             <li class="nav-item border-right border-success">
                 <a class="nav-link" href="#">Contacto</a>

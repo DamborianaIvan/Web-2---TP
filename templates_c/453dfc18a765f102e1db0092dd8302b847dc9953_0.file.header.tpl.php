@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-14 00:45:50
+/* Smarty version 3.1.34-dev-7, created on 2020-10-14 13:58:12
   from 'C:\xamppp\htdocs\TPWEB2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f862e1e3102a0_48615903',
+  'unifunc' => 'content_5f86e7d4e3e5e4_88739366',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '453dfc18a765f102e1db0092dd8302b847dc9953' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\header.tpl',
-      1 => 1602629123,
+      1 => 1602676687,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f862e1e3102a0_48615903 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f86e7d4e3e5e4_88739366 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -51,10 +51,12 @@ function content_5f862e1e3102a0_48615903 (Smarty_Internal_Template $_smarty_tpl)
     <div class="navbar">
         <ul class=" d-flex list-unstyled justify-content-center w-100 justify-content-around">
             <li class="nav-item active border-right border-success">
-                <a class="nav-link" href="home">Home</a>
+                <a class="nav-link" href="<?php echo BASE_URL;?>
+/home">Home</a>
             </li>
             <li class="nav-item border-right border-success">
-                <a class="nav-link" href="productos">Productos</a>
+                <a class="nav-link" href="<?php echo BASE_URL;?>
+/productos">Productos</a>
             </li>
             <li class="nav-item border-right border-success">
                 <a class="nav-link" href="#">Contacto</a>
