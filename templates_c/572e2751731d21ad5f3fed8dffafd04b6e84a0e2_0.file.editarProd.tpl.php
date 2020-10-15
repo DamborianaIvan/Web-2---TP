@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 15:32:08
+/* Smarty version 3.1.34-dev-7, created on 2020-10-15 23:28:43
   from 'D:\xampp\htdocs\Web-2---TP\templates\editarProd.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f884f58a3a402_66911718',
+  'unifunc' => 'content_5f88bf0b9ea3f2_23693416',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '572e2751731d21ad5f3fed8dffafd04b6e84a0e2' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\editarProd.tpl',
-      1 => 1602767453,
+      1 => 1602797241,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f884f58a3a402_66911718 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f88bf0b9ea3f2_23693416 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -30,24 +30,24 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
 /editarProducto/<?php echo $_smarty_tpl->tpl_vars['Id']->value;?>
 " class="d-flex flex-column">
             <div class="form-group  ml-3">
-                <label for="NombreNuevo" class="text-center">Nombre nuevo</label>
+                <label for="NombreEditar" class="text-center">Nombre nuevo</label>
                 <input type="text" class="form-control" id="NombreProdEditar" name="NombreEditar" placeholder="Ingrese Nombre">
             </div>
             <div class="form-group ml-3">
-                <label for="DescripcionNueva" class="text-center">Descripcion nueva</label>
+                <label for="DescripcionEditar" class="text-center">Descripcion nueva</label>
                 <input type="text" class="form-control" id="DescripcionEditar" name="DescripcionProdEditar"
                     placeholder="Descripcion">
             </div>
             <div class="form-group  ml-3">
-                <label for="PrecioNuevo" class="text-center">Precio nuevo</label>
+                <label for="PrecioProdEditar" class="text-center">Precio nuevo</label>
                 <input type="number" class="form-control" id="PrecioProdEditar" name="PrecioEditar" placeholder="Precio">
             </div>
             <div class="form-group  ml-3">
-                <label for="PrecioNuevo" class="text-center">Estado del producto nuevo</label>
+                <label for="EstadoProdEditar" class="text-center">Estado del producto nuevo</label>
                 <input type="text" class="form-control" id="EstadoProdEditar" name="EstadoProdEditar" placeholder="Estado del Producto">
             </div>
             <div class="form-group  ml-3">
-                <label for="CategoriaNueva" class="text-center">Categoria nueva</label>
+                <label for="CategoriaEditar" class="text-center">Categoria nueva</label>
                 <select name="CategoriaEditar">
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Categorias']->value, 'categoria');

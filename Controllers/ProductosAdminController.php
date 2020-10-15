@@ -58,7 +58,7 @@ class ProductosAdminController extends SecuredController{
 
     
      public function EditarProducto($id_producto){
-         $this->modelProductos->EditarProducto($id_producto, $_POST['NombreEditar'],$_POST['DescripcionProdEditar'],$_POST['PrecioEditar'],$_POST['CategoriaEditar'].value);
+         $this->modelProductos->EditarProducto($id_producto, $_POST['NombreEditar'],$_POST['DescripcionProdEditar'],$_POST['PrecioEditar'],$_POST['EstadoProdEditar'],$_POST['CategoriaEditar']);
          header(PRODUCTOSADMIN);
      }
 
