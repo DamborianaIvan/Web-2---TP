@@ -39,7 +39,12 @@ class ProductosAdminView {
         
         $this->Smarty->display('templates/agregarCategoria.tpl');
     }
-    
+
+    public function DisplayEditarCat($Categorias){ 
+        $this->Smarty->assign('Categorias', $Categorias);
+
+        $this->Smarty->display('templates/editarCategoria.tpl');
+    }
 }
 
 ?>

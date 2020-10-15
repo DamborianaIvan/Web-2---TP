@@ -44,8 +44,14 @@ class ProductosAdminController extends SecuredController{
     } 
     public function GetCreateCategoria(){
         $this->view->DisplayAgregaCat();
+    
         
     }
+    public function GetEditCategorias(){
+        $categorias = $this->modelCategorias->GetCategorias();     
+        $this->view->DisplayEditarCat($categorias);
+    }
+
 
 
 
@@ -70,17 +76,17 @@ class ProductosAdminController extends SecuredController{
 
 
 
+    //                    CATEGORIA  
     public function InsertarCat(){
-        $this->modelCategoria->InsertarCategoria($_POST['CategoriaNueva']);
+        $this->modelCategorias->InsertarCategoria($_POST['CategoriaNueva']);
         header(PRODUCTOSADMIN);
     }
 
-    //                      CATEGORIA  
 
-    // public function EditarCategoria(){
-    //   $this->modelCategoria->EditarCategoria($_POST['NuevaCategoriaEditar'],$_POST['CategoriaEditar'].value);
-    //   header(MENUADMIN);
-    // }                                 
+    public function EditarCategoria(){
+      $this->modelCategorias->EditarCategoria($_POST['NombreCategoriaEditar'],$_POST['CategoriaaEditar'].value);
+      header(PRODUCTOSADMIN);
+    }                                 
    
     // public function BorrarCategoria($id){
     //     $this->modelCategoria->BorrarCategoria($id);

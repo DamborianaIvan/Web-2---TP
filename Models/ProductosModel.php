@@ -47,10 +47,5 @@ class ProductosModel {
 
 
 
-    // public function AgregarUsuario($user,$password,$email){
-    //     $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_usuario,mail_usuario,clave_usuario) VALUES (?,?,?)");
-    //     $sentencia->execute(array($user,$email,$password));
-    // }
-
 }
 ?>

@@ -69,6 +69,12 @@
          }elseif ($partesURL[0]=="insertarcategoria") {
             $controller = new ProductosAdminController();
             $controller->InsertarCat();
+        }elseif ($partesURL[0]=="editarcategorias") {
+            $controller = new ProductosAdminController();
+            $controller->GetEditCategorias();
+        }elseif ($partesURL[0]=="editarcategoria") {
+            $controller = new ProductosAdminController();
+            $controller->EditarCategoria();
         }
     }
     

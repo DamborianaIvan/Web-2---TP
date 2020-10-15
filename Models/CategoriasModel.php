@@ -16,16 +16,25 @@ class CategoriasModel {
 
 
     public function InsertarCategoria($nombreCategoria){
-        $sentencia = $this->db->prepare("INSERT INTO categoria (`id_cat`, `nombre_cat`) VALUES (NULL, $nombreCategoria)");
-        $sentencia->execute(array(NULL, $nombreCategoria));
+        $sentencia = $this->db->prepare("INSERT INTO categoria (nombre_cat) VALUES (?)");
+        $sentencia->execute(array($nombreCategoria));
     }
-    // public function EditarCategoria($nombreCategoriaNueva, $idCategoria){
-    //     $sentencia = $this->db->prepare("UPDATE categoria SET `nombre_categoria` = '$nombreCategoriaNueva' WHERE id_categoria=$idCategoria");
-    //     $sentencia->execute(); 
+    public function EditarCategoria($nombreCategoriaNueva, $idCategoria){
+        $sentencia = $this->db->prepare("UPDATE `categoria` SET `nombre_cat` = '$nombreCategoriaNueva' WHERE `categoria`.`id_cat`= $idCategoria");
+        $sentencia->execute(); 
+    }
+    
+    // public function EditarProducto($id_prod, $nombre_prod,$descripcion_prod, $precio_prod,$categoria_prod){
+    //     $sentencia = $this->db->prepare("UPDATE `producto` SET  `nombre_prod` = '$nombre_prod', `descripcion_prod` = '$descripcion_prod', `precio_prod` = '$precioMenu' WHERE `producto`.`id_producto` = $id_prod");
+    //     $sentencia->execute();
     // }
     // public function BorrarCategoria($id){
     //     $sentencia = $this->db->prepare("DELETE FROM categoria WHERE id_categoria=?");
     //     $sentencia->execute(array($id));
+    // }
+     // public function AgregarUsuario($user,$password,$email){
+    //     $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_usuario,mail_usuario,clave_usuario) VALUES (?,?,?)");
+    //     $sentencia->execute(array($user,$email,$password));
     // }
 }
 ?>
