@@ -6,14 +6,13 @@
         <p>Ropa de niños y niñas</p>
     </div>
 </div>
-    <div class="container justify-content-center text-center mt-4">
+    <div class="container-fluid justify-content-center text-center mt-4 border border-dark bg-info">
         <h2>PRODUCTOS EN OFERTA</h2>
         <div class="row mt-5 justify-content-center justify-content-around">
             {foreach from=$Productos item=$Producto}
                 {if $Producto.estado_prod=== "Oferta"}
                     <div class="col-3">
                         <div class="card mb-3">     
-                            <img src="img/" class="" alt={$Producto.nombre_prod}>
                             <div class="card-body">
                                 <h5 class="card-title">{$Producto.nombre_prod}</h5>
                                 <p class="card-text">{$Producto.descripcion_prod}</p>

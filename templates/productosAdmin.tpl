@@ -4,7 +4,7 @@
     <div class="container text-center">
         <div>
             <h3 class="mt-5">Categorias</h3>
-            <a href="{BASE_URL}/editarcategorias" class="btn btn-secondary mt-5">Editar Categoria</a>
+            <a href="{BASE_URL}/editarcategorias" class="btn btn-danger text-dark mt-5">Editar Categoria</a>
         </div>    
         <div class="container">
             <ul class="d-flex justify-content-between lista-cat">
@@ -16,8 +16,8 @@
                     </li>
                 {/foreach}
             </ul>
-            <a href="{BASE_URL}/agregarprod" class="btn btn-secondary">Agregar Producto</a>
-            <a href="{BASE_URL}/agregarcategoria" class="btn btn-secondary">Agregar Categoria</a>
+            <a href="{BASE_URL}/agregarprod" class="btn btn-danger mr-3 ml-3 text-dark">Agregar Producto</a>
+            <a href="{BASE_URL}/agregarcategoria" class="btn btn-danger text-dark">Agregar Categoria</a>
         </div>
     </div>
     <div class="row justify-content-around mt-4">      
