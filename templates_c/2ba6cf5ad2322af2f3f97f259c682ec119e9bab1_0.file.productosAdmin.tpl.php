@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 17:34:36
+/* Smarty version 3.1.34-dev-7, created on 2020-10-15 22:15:54
   from 'D:\xampp\htdocs\Web-2---TP\templates\productosAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f886c0cc11d36_64194942',
+  'unifunc' => 'content_5f88adfae039d7_78059060',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ba6cf5ad2322af2f3f97f259c682ec119e9bab1' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\productosAdmin.tpl',
-      1 => 1602775948,
+      1 => 1602792952,
       2 => 'file',
     ),
   ),
@@ -22,18 +22,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f886c0cc11d36_64194942 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f88adfae039d7_78059060 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<div class="container mt-5 border border-dark">
+<div class="container mt-5 border border-dark bg-info">
     <h1 class="text-center mt-5">Productos ADMIN</h1>
     <div class="container text-center">
         <div>
             <h3 class="mt-5">Categorias</h3>
             <a href="<?php echo BASE_URL;?>
 /editarcategorias" class="btn btn-secondary mt-5">Editar Categoria</a>
-            <a href="<?php echo BASE_URL;?>
-/editarcategorias" class="btn btn-secondary mt-5">Eliminar Categoria</a>
         </div>    
         <div class="container">
             <ul class="d-flex justify-content-between lista-cat">
@@ -45,10 +43,15 @@ $_smarty_tpl->tpl_vars['Categoria']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Categoria']->value) {
 $_smarty_tpl->tpl_vars['Categoria']->do_else = false;
 ?>
-                    <li><a href="<?php echo BASE_URL;?>
+                    <li>
+                        <a href="<?php echo BASE_URL;?>
 /productosbycategoria/<?php echo $_smarty_tpl->tpl_vars['Categoria']->value['id_cat'];?>
 "><?php echo $_smarty_tpl->tpl_vars['Categoria']->value['nombre_cat'];?>
-</a></li>
+</a>
+                        <a href="<?php echo BASE_URL;?>
+/eliminarcategoria/<?php echo $_smarty_tpl->tpl_vars['Categoria']->value['id_cat'];?>
+" class="bg-danger rounded p-1 w-25 text-center">X</a>
+                    </li>
                 <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -67,14 +70,13 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Producto']->valu
 $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>        
                     <div class="col-4">
-                        <div class="card mb-3">     
-                            <img  class="card-img-top" alt="asd">
+                        <div class="card mb-3 text-center">     
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 </h5>
                                 <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['descripcion_prod'];?>
 </p>
-                                <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['precio_prod'];?>
+                                <p class="card-text">$<?php echo $_smarty_tpl->tpl_vars['Producto']->value['precio_prod'];?>
 </p>
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic example">

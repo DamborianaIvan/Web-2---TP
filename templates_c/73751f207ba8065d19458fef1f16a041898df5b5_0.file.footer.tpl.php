@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 15:11:52
+/* Smarty version 3.1.34-dev-7, created on 2020-10-15 22:17:38
   from 'D:\xampp\htdocs\Web-2---TP\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f884a98c26b73_39115799',
+  'unifunc' => 'content_5f88ae62ee2d37_70223095',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73751f207ba8065d19458fef1f16a041898df5b5' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\footer.tpl',
-      1 => 1602767453,
+      1 => 1602793054,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f884a98c26b73_39115799 (Smarty_Internal_Template $_smarty_tpl) {
-?><footer class="container-fluid border border-primary mt-3 bg-info">
+function content_5f88ae62ee2d37_70223095 (Smarty_Internal_Template $_smarty_tpl) {
+?><footer class="container-fluid border border-primary mt-3 bg-dark text-white">
 <div class="redes-sociales mt-4 d-flex justify-content-around">
     <a href="#"><i class="fa fa-instagram"></i></a>
     <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>

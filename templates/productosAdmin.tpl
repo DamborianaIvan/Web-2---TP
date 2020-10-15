@@ -1,5 +1,5 @@
 {include file="header.tpl"}
-<div class="container mt-5 border border-dark">
+<div class="container mt-5 border border-dark bg-info">
     <h1 class="text-center mt-5">Productos ADMIN</h1>
     <div class="container text-center">
         <div>
@@ -24,7 +24,6 @@
             {foreach from=$Productos item=$Producto}        
                     <div class="col-4">
                         <div class="card mb-3 text-center">     
-                            <img  class="card-img-top" alt="asd">
                             <div class="card-body">
                                 <h5 class="card-title">{$Producto.nombre_prod}</h5>
                                 <p class="card-text">{$Producto.descripcion_prod}</p>

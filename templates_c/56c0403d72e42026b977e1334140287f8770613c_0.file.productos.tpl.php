@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 15:24:00
+/* Smarty version 3.1.34-dev-7, created on 2020-10-15 22:11:16
   from 'D:\xampp\htdocs\Web-2---TP\templates\productos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f884d706c7913_75484230',
+  'unifunc' => 'content_5f88ace4bff115_37656069',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56c0403d72e42026b977e1334140287f8770613c' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\productos.tpl',
-      1 => 1602767453,
+      1 => 1602792675,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f884d706c7913_75484230 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f88ace4bff115_37656069 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container mt-5 border border-dark bg-info">
@@ -58,8 +58,7 @@ $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>                   
                     <div class="col-4">
                         <div class="card bg-light mb-3 text-center">     
-                            <img  class="card-img-top" alt=<?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
->
+                            
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 </h5>
@@ -68,7 +67,7 @@ $_smarty_tpl->tpl_vars['Producto']->do_else = false;
                                 <p class="card-text">$<?php echo $_smarty_tpl->tpl_vars['Producto']->value['precio_prod'];?>
 </p>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <div class="btn" role="group" aria-label="Basic example">
                                 <a href="<?php echo BASE_URL;?>
 /productos/<?php echo $_smarty_tpl->tpl_vars['Producto']->value['id_producto'];?>
 " class="btn btn-primary">Mostrar mas</a>

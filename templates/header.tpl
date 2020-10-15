@@ -23,16 +23,16 @@
 
     
 
-{if $_SESSION["User"]}
+
     <div>
         <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT</a>
     </div>
-{else}
+
     
     <div>
         <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR</a>
     </div>
-{/if}
+
 
 
 <div>

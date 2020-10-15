@@ -74,7 +74,7 @@
             $controller->GetEditCategorias();
         }elseif ($partesURL[0]=="editarcategoria") {
             $controller = new ProductosAdminController();
-            $controller->EditarCategoria();
+            $controller->EditarCategoria($partesURL[1]);
         }elseif ($partesURL[0]=="eliminarcategoria") {
             $controller = new ProductosAdminController();
             $controller->BorrarCategoria($partesURL[1]);
