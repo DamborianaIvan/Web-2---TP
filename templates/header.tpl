@@ -16,12 +16,15 @@
 
 <body>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-center justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-light bg-info justify-content-center justify-content-between">
 <div>
     <a class="navbar-brand" href="#">Tienda Online</a>
 </div>
 <div>
-    <a class="nav-link bg-dark text-light" href="{BASE_URL}/login">INGRESAR</a>
+    <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR</a>
+</div>
+<div>
+    <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT</a>
 </div>
 <div>
     <p class="fecha">1/9/2020</p>
@@ -37,7 +40,7 @@
         <a class="nav-link" href="{BASE_URL}/productos">Productos</a>
     </li>
     <li class="nav-item border-right border-success">
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link" href="{BASE_URL}/productosAdmin">Administrar Productos</a>
     </li>
     
 </ul>

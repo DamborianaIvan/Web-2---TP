@@ -35,7 +35,6 @@ class ProductosPageController{
     //Obtengo un prducto x id de la base de datos y los envio a la vista
     public function GetProducto($id_prod){
         $producto = $this->modelProductos->GetProductoById($id_prod); 
-
         $this->view->DisplayProductoPage($producto);  
        
     }

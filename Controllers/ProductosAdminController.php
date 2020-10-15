@@ -33,22 +33,47 @@ class ProductosAdminController extends SecuredController{
         $categorias = $this->modelCategorias->GetCategorias();     
         $this->view->DisplayAdmProds($productos,$categorias);
     }
+    public function GetEditProductos($idProd){
+        $categorias = $this->modelCategorias->GetCategorias();     
+        $this->view->DisplayEditProds($categorias, $idProd);
+    }
+    public function GetCreateProducto(){
+        $categorias = $this->modelCategorias->GetCategorias();
+        $this->view->DisplayAgregaProd($categorias);
+        header(PRODUCTOSADMIN);
+    } 
+    public function GetCreateCategoria(){
+        $this->view->DisplayAgregaCat();
+        
+    }
 
-    //                          MENU
 
-    // public function InsertarMenu(){
-    //     $this->modelProductos->InsertarMenu($_POST['Nombre'],$_POST['Descripcion'],$_POST['Precio'],$_POST['Categoria'].value);
-    //     header(MENUADMIN);
-    // }
-    // public function EditarMenu(){
-    //     $this->modelProductos->EditarMenu($_POST['IndiceMenuEditar'].value,$_POST['NombreMenuEditar'],$_POST['DescripcionMenuEditar'],$_POST['PrecioMenuEditar'],$_POST['CategoriaMenuEditar'].value);
-    //     header(MENUADMIN);
-    // }
 
-    // public function BorrarMenu($id){
-    //     $this->modelProductos->BorrarMenu($id);
-    //     header(MENUADMIN);
-    // }
+
+    
+     public function EditarProducto($id_producto){
+         $this->modelProductos->EditarProducto($id_producto, $_POST['NombreEditar'],$_POST['DescripcionProdEditar'],$_POST['PrecioEditar'],$_POST['CategoriaEditar'].value);
+         header(PRODUCTOSADMIN);
+     }
+
+     public function BorrarProducto($id_borrar){
+         $this->modelProductos->BorrarProducto($id_borrar);
+         header(PRODUCTOSADMIN);
+     }
+     public function AgregarProducto(){
+         $this->modelProductos->AgregarProducto($_POST['NombreNuevo'],$_POST['DescripcionNuevo'],$_POST['PrecioNuevo'],$_POST['EstadoNuevo'],$_POST['CategoriaNuevo']);
+         header(PRODUCTOSADMIN);
+     }
+
+
+
+
+
+
+    public function InsertarCat(){
+        $this->modelCategoria->InsertarCategoria($_POST['CategoriaNueva']);
+        header(PRODUCTOSADMIN);
+    }
 
     //                      CATEGORIA  
 
@@ -56,10 +81,7 @@ class ProductosAdminController extends SecuredController{
     //   $this->modelCategoria->EditarCategoria($_POST['NuevaCategoriaEditar'],$_POST['CategoriaEditar'].value);
     //   header(MENUADMIN);
     // }                                 
-    // public function InsertarCategoria(){
-    //     $this->modelCategoria->InsertarCategoria($_POST['NuevaCategoria']);
-    //     header(MENUADMIN);
-    // }
+   
     // public function BorrarCategoria($id){
     //     $this->modelCategoria->BorrarCategoria($id);
     //     header(MENUADMIN);

@@ -1,4 +1,4 @@
-<footer class="container-fluid border border-primary mt-3 bg-primary">
+<footer class="container-fluid border border-primary mt-3 bg-info">
 <div class="redes-sociales mt-4 d-flex justify-content-around">
     <a href="#"><i class="fa fa-instagram"></i></a>
     <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>

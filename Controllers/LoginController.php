@@ -2,6 +2,8 @@
 <?php
 require_once ".\Models\UsuarioModel.php";
 require_once ".\Views\LoginView.php";
+
+
 define('LOGIN', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/login");
 define('PRODUCTOSADMIN', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/productosAdmin");
 define('LOGOUT', "Location: http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["PHP_SELF"])."/logout");
@@ -30,11 +32,10 @@ class LoginController{
         header(LOGIN);
     }
     
-    public function verificarLogin(){
+    public function VerificarLogin(){
         $user = $_POST["usuarioId"];
         $pass = $_POST["passwordId"];
         $dbUser = $this->modelUsuario->GetUser($user);
-        var_dump($dbUser);
         if(isset($dbUser)){
              //password_verify desencripta la contraseña encriptada guardada en este caso en hash y la compara con la ingresada
             if(password_verify($pass,$dbUser[0]["password_user"])){

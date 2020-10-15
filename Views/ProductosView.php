@@ -27,6 +27,7 @@
     
             $this->Smarty->display('templates/producto.tpl');
         }
+
 }
 
 ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-14 18:10:03
+/* Smarty version 3.1.34-dev-7, created on 2020-10-15 02:14:53
   from 'C:\xamppp\htdocs\TPWEB2\templates\productosAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f8722db1f0664_70714916',
+  'unifunc' => 'content_5f87947db58fb9_43692816',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6e6280f7967df39e458afc585099fa3de89b6e5' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\TPWEB2\\templates\\productosAdmin.tpl',
-      1 => 1602691801,
+      1 => 1602720545,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f8722db1f0664_70714916 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f87947db58fb9_43692816 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container mt-5 border border-dark">
@@ -47,6 +47,10 @@ $_smarty_tpl->tpl_vars['Categoria']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </ul>
+            <a href="<?php echo BASE_URL;?>
+/agregarprod" class="btn btn-secondary">Agregar Producto</a>
+            <a href="<?php echo BASE_URL;?>
+/agregarcategoria" class="btn btn-secondary">Agregar Categoria</a>
         </div>
     </div>
     <div class="row justify-content-around mt-4">      
@@ -64,15 +68,19 @@ $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 </h5>
                                 <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['descripcion_prod'];?>
 </p>
+                                <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['precio_prod'];?>
+</p>
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="<?php echo BASE_URL;?>
 /productos/<?php echo $_smarty_tpl->tpl_vars['Producto']->value['id_producto'];?>
 " class="btn btn-secondary">Mas</a>
                                 <a href="<?php echo BASE_URL;?>
-/editarProd" class="btn btn-secondary">Editar</a>
+/editar/<?php echo $_smarty_tpl->tpl_vars['Producto']->value['id_producto'];?>
+" class="btn btn-secondary">Editar</a>
                                 <a href="<?php echo BASE_URL;?>
-/eliminarProd" class="btn btn-secondary">Eliminar</a>
+/eliminarProd/<?php echo $_smarty_tpl->tpl_vars['Producto']->value['id_producto'];?>
+" class="btn btn-secondary">Eliminar</a>
                             </div>
                         </div>
                     </div>           

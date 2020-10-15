@@ -29,6 +29,20 @@ class ProductosModel {
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function EditarProducto($id_prod, $nombre_prod,$descripcion_prod, $precio_prod,$categoria_prod){
+        $sentencia = $this->db->prepare("UPDATE `producto` SET  `nombre_prod` = '$nombre_prod', `descripcion_prod` = '$descripcion_prod', `precio_prod` = '$precioMenu' WHERE `producto`.`id_producto` = $id_prod");
+        $sentencia->execute();
+    }
+    public function BorrarProducto($id_prod){
+        $sentencia= $this->db->prepare("DELETE FROM producto WHERE id_producto = $id_prod");
+        $sentencia->execute();
+    }
+    public function AgregarProducto($nombre_prod,$descripcion_prod, $precio_prod,$estado_producto,$categoria_prod){
+        $sentencia = $this->db->prepare("INSERT INTO producto (nombre_prod, precio_prod, descripcion_prod, estado_prod, id_categoria) VALUES (?,?,?,?,?)");
+        $sentencia->execute(array($nombre_prod, $precio_prod, $descripcion_prod, $estado_producto, $categoria_prod));
+    }
+    
+
 
 
 

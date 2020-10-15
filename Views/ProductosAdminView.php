@@ -16,6 +16,30 @@ class ProductosAdminView {
 
         $this->Smarty->display('templates/productosAdmin.tpl');
     }
+    //Display de editarprod
+    public function DisplayEditProds($Categorias, $idProd){ 
+
+        $this->Smarty->assign('Categorias', $Categorias);
+        $this->Smarty->assign('Id', $idProd);
+        
+    
+
+        $this->Smarty->display('templates/editarProd.tpl');
+    }
+    //Display de Insertar Producto
+    public function DisplayAgregaProd($Categorias){ 
+
+        $this->Smarty->assign('Categorias', $Categorias);
+
+
+        $this->Smarty->display('templates/agregarProd.tpl');
+    }
+    //Display de Insertar Categoria
+    public function DisplayAgregaCat(){ 
+        
+        $this->Smarty->display('templates/agregarCategoria.tpl');
+    }
+    
 }
 
 ?>

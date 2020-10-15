@@ -3,8 +3,9 @@
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/home/banner.jpg);
 }
+
 
 .redes-sociales {
     font-size: 40px;
@@ -38,16 +39,12 @@ footer p {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.card:hover  {
-    width: 350px;
-}
+
 .card-img{
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
 }
-.card-img:hover{
-    border: 2px solid black;
-}
+
 .lista-cat{
     margin: 30px;
     border: 2px solid black;
@@ -61,12 +58,6 @@ footer p {
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
 }
-.lista-cat li a:hover{
-    margin: 0 auto;
-    background-color: #053779;
-    color: wheat;
-    border-radius: 30%;
-    padding: 10px;
-}
+
 
 
