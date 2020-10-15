@@ -10,7 +10,7 @@
         <h2>PRODUCTOS EN OFERTA</h2>
         <div class="row mt-5 justify-content-center justify-content-around">
             {foreach from=$Productos item=$Producto}
-                {if $Producto.estado_prod === "Oferta"}
+                {if $Producto.estado_prod=== "Oferta"}
                     <div class="col-3">
                         <div class="card mb-3">     
                             <img src="img/" class="" alt={$Producto.nombre_prod}>

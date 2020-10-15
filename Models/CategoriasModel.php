@@ -19,9 +19,13 @@ class CategoriasModel {
         $sentencia = $this->db->prepare("INSERT INTO categoria (nombre_cat) VALUES (?)");
         $sentencia->execute(array($nombreCategoria));
     }
-    public function EditarCategoria($nombreCategoriaNueva, $idCategoria){
+    public function EditarCategoria($idCategoria,$nombreCategoriaNueva){
         $sentencia = $this->db->prepare("UPDATE `categoria` SET `nombre_cat` = '$nombreCategoriaNueva' WHERE `categoria`.`id_cat`= $idCategoria");
         $sentencia->execute(); 
+    }
+    public function BorrarCategoria($id){
+        $sentencia = $this->db->prepare("DELETE FROM categoria WHERE id_cat=?");
+        $sentencia->execute(array($id));
     }
     
     // public function EditarProducto($id_prod, $nombre_prod,$descripcion_prod, $precio_prod,$categoria_prod){

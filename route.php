@@ -54,7 +54,7 @@
         }elseif ($partesURL[0]=="eliminarProd") {
             $controller = new ProductosAdminController();
             $controller->BorrarProducto($partesURL[1]);
-        }elseif ($partesURL[0]=="logout") {
+        }elseif ($partesURL[0]=="logout"){
             $controller = new LoginController();
             $controller->Logout();
         }elseif ($partesURL[0]=="agregarprod") {
@@ -75,6 +75,9 @@
         }elseif ($partesURL[0]=="editarcategoria") {
             $controller = new ProductosAdminController();
             $controller->EditarCategoria();
+        }elseif ($partesURL[0]=="eliminarcategoria") {
+            $controller = new ProductosAdminController();
+            $controller->EliminarCategoria($partesURL[1]);
         }
     }
     

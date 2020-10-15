@@ -2,7 +2,11 @@
 <div class="container mt-5 border border-dark">
     <h1 class="text-center mt-5">Productos ADMIN</h1>
     <div class="container text-center">
-        <h3 class="mt-5">Categorias</h3>
+        <div>
+            <h3 class="mt-5">Categorias</h3>
+            <a href="{BASE_URL}/editarcategorias" class="btn btn-secondary mt-5">Editar Categoria</a>
+            <a href="{BASE_URL}/editarcategorias" class="btn btn-secondary mt-5">Eliminar Categoria</a>
+        </div>    
         <div class="container">
             <ul class="d-flex justify-content-between lista-cat">
                 <li><a href="{BASE_URL}/productos">Todos</a></li>

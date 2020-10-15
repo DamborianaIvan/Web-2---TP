@@ -84,14 +84,14 @@ class ProductosAdminController extends SecuredController{
 
 
     public function EditarCategoria(){
-      $this->modelCategorias->EditarCategoria($_POST['NombreCategoriaEditar'],$_POST['CategoriaaEditar'].value);
+      $this->modelCategorias->EditarCategoria($_POST['EditCategoria'],$_POST['NombreCategoriaEditada']);
       header(PRODUCTOSADMIN);
     }                                 
    
-    // public function BorrarCategoria($id){
-    //     $this->modelCategoria->BorrarCategoria($id);
-    //     header(MENUADMIN);
-    // }
+    public function BorrarCategoria($id){
+        $this->modelCategorias->BorrarCategoria($id);
+        header(PRODUCTOSADMIN);
+    }
 }
 
 
