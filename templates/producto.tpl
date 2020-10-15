@@ -6,7 +6,7 @@
             <div class="card-body">
                 <h5 class="card-title">{$Producto[0].nombre_prod}</h5>
                 <p class="card-text">{$Producto[0].descripcion_prod}</p>
-                <p class="card-text">{$Producto[0].precio_prod}</p>
+                <p class="card-text">${$Producto[0].precio_prod}</p>
             </div>
         </div>
     </div>              

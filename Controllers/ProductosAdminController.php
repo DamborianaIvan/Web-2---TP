@@ -88,8 +88,8 @@ class ProductosAdminController extends SecuredController{
       header(PRODUCTOSADMIN);
     }                                 
    
-    public function BorrarCategoria($id){
-        $this->modelCategorias->BorrarCategoria($id);
+    public function BorrarCategoria($idCat){
+        $this->modelCategorias->BorrarCategoria($idCat);
         header(PRODUCTOSADMIN);
     }
 }

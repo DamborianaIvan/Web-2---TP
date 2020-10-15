@@ -20,12 +20,21 @@
 <div>
     <a class="navbar-brand" href="#">Tienda Online</a>
 </div>
-<div>
-    <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR</a>
-</div>
-<div>
-    <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT</a>
-</div>
+
+    
+
+{if $_SESSION["User"]}
+    <div>
+        <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT</a>
+    </div>
+{else}
+    
+    <div>
+        <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR</a>
+    </div>
+{/if}
+
+
 <div>
     <p class="fecha">1/9/2020</p>
     <p class="ubicacion">Tandil, Argentina</p>
