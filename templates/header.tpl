@@ -18,19 +18,19 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-info justify-content-center justify-content-between">
 <div>
-    <a class="navbar-brand" href="#">Tienda Online</a>
+    <a class="navbar-brand" href="{BASE_URL}/home">Tienda Online</a>
 </div>
 
     
 
-{{if $_SESSION ["User"]}
+
         <div>
             <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT </a> </div>
- {else}
+
         <div>
             <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR </a>
         </div>
-{/if}
+
 
     
 

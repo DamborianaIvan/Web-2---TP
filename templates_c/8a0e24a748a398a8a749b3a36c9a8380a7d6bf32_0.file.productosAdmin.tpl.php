@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 18:49:29
+/* Smarty version 3.1.34-dev-7, created on 2020-10-16 17:07:42
   from 'C:\xamppp\htdocs\Web-2---TP\templates\productosAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f887d9986d4d0_08359712',
+  'unifunc' => 'content_5f89b73e863356_57255233',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8a0e24a748a398a8a749b3a36c9a8380a7d6bf32' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\Web-2---TP\\templates\\productosAdmin.tpl',
-      1 => 1602780566,
+      1 => 1602860845,
       2 => 'file',
     ),
   ),
@@ -22,16 +22,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f887d9986d4d0_08359712 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f89b73e863356_57255233 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<div class="container mt-5 border border-dark">
+<div class="container mt-5 border border-dark bg-info">
     <h1 class="text-center mt-5">Productos ADMIN</h1>
     <div class="container text-center">
         <div>
             <h3 class="mt-5">Categorias</h3>
             <a href="<?php echo BASE_URL;?>
-/editarcategorias" class="btn btn-secondary mt-5">Editar Categoria</a>
+/editarcategorias" class="btn btn-danger text-dark mt-5">Editar Categoria</a>
         </div>    
         <div class="container">
             <ul class="d-flex justify-content-between lista-cat">
@@ -57,9 +57,9 @@ $_smarty_tpl->tpl_vars['Categoria']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </ul>
             <a href="<?php echo BASE_URL;?>
-/agregarprod" class="btn btn-secondary">Agregar Producto</a>
+/agregarprod" class="btn btn-danger mr-3 ml-3 text-dark">Agregar Producto</a>
             <a href="<?php echo BASE_URL;?>
-/agregarcategoria" class="btn btn-secondary">Agregar Categoria</a>
+/agregarcategoria" class="btn btn-danger text-dark">Agregar Categoria</a>
         </div>
     </div>
     <div class="row justify-content-around mt-4">      
@@ -70,8 +70,9 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Producto']->valu
 $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>        
                     <div class="col-4">
-                        <div class="card mb-3 text-center">     
-                            <img  class="card-img-top" alt="asd">
+                        <div class="card mb-3 text-center">
+                            <img  class="card-img-top" alt="Imagen-<?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
+">         
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 </h5>

@@ -7,6 +7,7 @@
                     <option value="{$categoria.id_cat}">{$categoria.nombre_cat}</option>
                     {/foreach}
                 </select>
+                
             </div>
             <div class="form-group ml-3">
                 <label for="NombreCategoriaEditar" class="text-center">Nombre de la Categoria Nueva</label>

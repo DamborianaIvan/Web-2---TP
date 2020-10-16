@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 18:55:22
+/* Smarty version 3.1.34-dev-7, created on 2020-10-16 17:00:29
   from 'C:\xamppp\htdocs\Web-2---TP\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f887efad759a5_43400972',
+  'unifunc' => 'content_5f89b58d3c88e5_82629148',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '634a05c1f2fa01c8c64380b07ceb9d225dd3d259' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\Web-2---TP\\templates\\header.tpl',
-      1 => 1602780921,
+      1 => 1602860425,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f887efad759a5_43400972 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f89b58d3c88e5_82629148 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -41,23 +41,25 @@ function content_5f887efad759a5_43400972 (Smarty_Internal_Template $_smarty_tpl)
 <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-info justify-content-center justify-content-between">
 <div>
-    <a class="navbar-brand" href="#">Tienda Online</a>
+    <a class="navbar-brand" href="<?php echo BASE_URL;?>
+/home">Tienda Online</a>
 </div>
 
     
 
-<?php if ($_smarty_tpl->tpl_vars['_SESSION']->value["User"]) {?>
-    <div>
-        <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
-/logout">LOGOUT</a>
-    </div>
-<?php } else { ?>
+
+        <div>
+            <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
+/logout">LOGOUT </a> </div>
+
+        <div>
+            <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
+/login">INGRESAR </a>
+        </div>
+
+
     
-    <div>
-        <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
-/login">INGRESAR</a>
-    </div>
-<?php }?>
+
 
 
 <div>
