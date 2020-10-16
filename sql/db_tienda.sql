@@ -2,17 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
-<<<<<<< HEAD
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2020 at 05:51 PM
+-- Generation Time: Oct 15, 2020 at 03:26 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
-=======
--- Servidor: 127.0.0.1
--- Tiempo de generación: 16-10-2020 a las 18:04:06
--- Versión del servidor: 10.4.13-MariaDB
--- Versión de PHP: 7.4.8
->>>>>>> 800a1fd77f365f99408b287cf8b5f3d432595102
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -25,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `db_tienda`
+-- Database: `db_tienda`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `categoria`
+-- Table structure for table `categoria`
 --
 
 CREATE TABLE `categoria` (
@@ -40,26 +33,21 @@ CREATE TABLE `categoria` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `categoria`
+-- Dumping data for table `categoria`
 --
 
 INSERT INTO `categoria` (`id_cat`, `nombre_cat`) VALUES
-(1, 'Remera'),
-<<<<<<< HEAD
-(15, 'Camisa'),
-(16, 'Pantalon');
-=======
-(2, 'Pantalon'),
-(3, 'Medias'),
-(4, 'Guantes'),
-(5, 'Camisa'),
-(8, 'Gorras');
->>>>>>> 800a1fd77f365f99408b287cf8b5f3d432595102
+(1, 'remera'),
+(2, 'pantalon '),
+(3, 'medias '),
+(4, 'gorras'),
+(5, 'camisa'),
+(6, 'ASD');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `producto`
+-- Table structure for table `producto`
 --
 
 CREATE TABLE `producto` (
@@ -72,33 +60,18 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `producto`
+-- Dumping data for table `producto`
 --
 
 INSERT INTO `producto` (`id_producto`, `nombre_prod`, `precio_prod`, `descripcion_prod`, `estado_prod`, `id_categoria`) VALUES
-<<<<<<< HEAD
-(22, 'Camiseta', 230, 'Camiseta Roja', 'Normal', 1),
-(23, 'Remera', 200, 'Remera con el estampado del equipo de futbol River', 'Oferta', 1),
-(24, 'Pantalon Futbol', 150, 'Pantalon con escudo de equipos de futbol', 'Normal', 16),
-(25, 'Pantalon Mujer', 230, 'Pantalon estampado flores, comodidades perfectas.', 'Ofert', 16),
-(26, 'Remera', 142, 'Remera de equipo de rugby, ideal para epocas de invierno.', 'Oferta', 1),
-(27, 'Camisa', 400, 'Camisa a cuadros especial para fiestas.', 'Normal', 15);
-=======
 (18, 'Remera Futbol', 120, 'Remera de el equipo de Boca Juniors', 'Normal', 1),
-(19, 'Remera de River Plate ', 110, 'Nueva Camiseta De River Plate', 'Normal', 1),
-(20, 'Pantalon Futbol', 130, 'Pantalon de Boca Juniors', 'Oferta', 2),
-(21, 'Pantalon blanco', 600, 'Pantalon blanco deportivo', 'Normal', 2),
-(22, 'Camisa Levis', 700, 'Camisa a cuadros ', 'Normal', 5),
-(23, 'Guantes ', 350, 'Guantes para el frio polar', 'Oferta', 4),
-(24, 'Gorra Nike', 550, 'Gorra Nike negra con dibujo', 'Oferta', 8),
-(25, 'Medias', 250, 'Medias Adidas blancas', 'Oferta', 3),
-(26, 'Camisa ', 650, 'Camisa de flores', 'Normal', 5);
->>>>>>> 800a1fd77f365f99408b287cf8b5f3d432595102
+(19, 'Remera Futbol', 120, 'Remera de el equipo de River Plate', 'Normal', 1),
+(20, 'Pantalon Futbol', 130, 'Pantalon de Boca Juniors', 'Oferta', 2);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -108,24 +81,24 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`id_user`, `nombre_user`, `password_user`) VALUES
 (1, 'admin', '$2y$10$iZHJhbij4E.G.xqY1OB/FeJCI31xe/MQpt2dTb8EQvFKtW3MkZ6ge');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `categoria`
+-- Indexes for table `categoria`
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id_cat`);
 
 --
--- Indices de la tabla `producto`
+-- Indexes for table `producto`
 --
 ALTER TABLE `producto`
   ADD PRIMARY KEY (`id_producto`),
@@ -133,47 +106,39 @@ ALTER TABLE `producto`
   ADD KEY `id_producto` (`id_producto`) USING BTREE;
 
 --
--- Indices de la tabla `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `categoria`
+-- AUTO_INCREMENT for table `categoria`
 --
 ALTER TABLE `categoria`
-<<<<<<< HEAD
-  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-=======
-  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
->>>>>>> 800a1fd77f365f99408b287cf8b5f3d432595102
+  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `producto`
+-- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
-<<<<<<< HEAD
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
-=======
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
->>>>>>> 800a1fd77f365f99408b287cf8b5f3d432595102
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT de la tabla `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `producto`
+-- Constraints for table `producto`
 --
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id_cat`);
