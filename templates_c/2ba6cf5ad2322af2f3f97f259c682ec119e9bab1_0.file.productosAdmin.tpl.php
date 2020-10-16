@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-16 00:35:59
+/* Smarty version 3.1.34-dev-7, created on 2020-10-16 18:06:26
   from 'D:\xampp\htdocs\Web-2---TP\templates\productosAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f88cecfdd4e61_45228038',
+  'unifunc' => 'content_5f89c502778b38_58722560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ba6cf5ad2322af2f3f97f259c682ec119e9bab1' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\productosAdmin.tpl',
-      1 => 1602801223,
+      1 => 1602864369,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f88cecfdd4e61_45228038 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f89c502778b38_58722560 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container mt-5 border border-dark bg-info">
@@ -70,7 +70,9 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Producto']->valu
 $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>        
                     <div class="col-4">
-                        <div class="card mb-3 text-center">     
+                        <div class="card mb-3 text-center">
+                            <img  class="card-img-top" alt="Imagen-<?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
+">         
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 </h5>
