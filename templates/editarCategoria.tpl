@@ -12,7 +12,7 @@
             <div class="form-group ml-3">
                 <label for="NombreCategoriaEditar" class="text-center">Nombre de la Categoria Nueva</label>
                 <input type="text" class="form-control" id="NombreCategoriaEditar" name="NombreCategoriaEditada"
-                    placeholder="Categoria nueva">
+                    placeholder="Categoria nueva" required>
             </div>
             <div class="form-group ml-3">
                 <button type="submit" class="btn btn-outline-danger btn-md">Editar</button>

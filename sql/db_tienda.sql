@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2020 at 03:26 PM
+-- Generation Time: Oct 16, 2020 at 05:51 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -37,12 +37,9 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`id_cat`, `nombre_cat`) VALUES
-(1, 'remera'),
-(2, 'pantalon '),
-(3, 'medias '),
-(4, 'gorras'),
-(5, 'camisa'),
-(6, 'ASD');
+(1, 'Remera'),
+(15, 'Camisa'),
+(16, 'Pantalon');
 
 -- --------------------------------------------------------
 
@@ -64,9 +61,12 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id_producto`, `nombre_prod`, `precio_prod`, `descripcion_prod`, `estado_prod`, `id_categoria`) VALUES
-(18, 'Remera Futbol', 120, 'Remera de el equipo de Boca Juniors', 'Normal', 1),
-(19, 'Remera Futbol', 120, 'Remera de el equipo de River Plate', 'Normal', 1),
-(20, 'Pantalon Futbol', 130, 'Pantalon de Boca Juniors', 'Oferta', 2);
+(22, 'Camiseta', 230, 'Camiseta Roja', 'Normal', 1),
+(23, 'Remera', 200, 'Remera con el estampado del equipo de futbol River', 'Oferta', 1),
+(24, 'Pantalon Futbol', 150, 'Pantalon con escudo de equipos de futbol', 'Normal', 16),
+(25, 'Pantalon Mujer', 230, 'Pantalon estampado flores, comodidades perfectas.', 'Ofert', 16),
+(26, 'Remera', 142, 'Remera de equipo de rugby, ideal para epocas de invierno.', 'Oferta', 1),
+(27, 'Camisa', 400, 'Camisa a cuadros especial para fiestas.', 'Normal', 15);
 
 -- --------------------------------------------------------
 
@@ -119,13 +119,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `usuario`

@@ -27,18 +27,7 @@ class CategoriasModel {
         $sentencia = $this->db->prepare("DELETE FROM `categoria` WHERE `categoria`.`id_cat`= $id");
         $sentencia->execute();
     }
-    
-    // public function EditarProducto($id_prod, $nombre_prod,$descripcion_prod, $precio_prod,$categoria_prod){
-    //     $sentencia = $this->db->prepare("UPDATE `producto` SET  `nombre_prod` = '$nombre_prod', `descripcion_prod` = '$descripcion_prod', `precio_prod` = '$precioMenu' WHERE `producto`.`id_producto` = $id_prod");
-    //     $sentencia->execute();
-    // }
-    // public function BorrarCategoria($id){
-    //     $sentencia = $this->db->prepare("DELETE FROM categoria WHERE id_categoria=?");
-    //     $sentencia->execute(array($id));
-    // }
-     // public function AgregarUsuario($user,$password,$email){
-    //     $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_usuario,mail_usuario,clave_usuario) VALUES (?,?,?)");
-    //     $sentencia->execute(array($user,$email,$password));
-    // }
+   
+
 }
 ?>
