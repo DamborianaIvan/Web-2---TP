@@ -1,5 +1,5 @@
 {include file="header.tpl"}
-        <form method="post" action="{BASE_URL}/editarcategoria" class="d-flex flex-column">
+        <form method="post" action="{BASE_URL}/editarcategorias/" class="d-flex flex-column">
             <div class="form-group  ml-3">
                 <label for="CategoriaNueva" class="text-center">Categoria a editar</label>
                 <select name="EditCategoria">

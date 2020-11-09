@@ -62,11 +62,14 @@
             $controller = new ProductosPageController();
             $controller->InsertarCat();
         }elseif ($partesURL[0]=="editarcategorias") {
-            $controller = new ProductosPageController();
-            $controller->GetEditCategorias();
-        }elseif ($partesURL[0]=="editarcategoria") {
-            $controller = new ProductosPageController();
-            $controller->EditarCategoria($partesURL[1]);
+            if (isset($partesURL[1])) {
+                $controller = new ProductosPageController();
+                $controller->EditarCategoria();
+            }else{
+                $controller = new ProductosPageController();
+                $controller->GetEditCategorias();
+            }
+
         }elseif ($partesURL[0]=="eliminarcategoria") {
             $controller = new ProductosPageController();
             $controller->BorrarCategoria($partesURL[1]);

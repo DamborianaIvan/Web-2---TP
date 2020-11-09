@@ -17,10 +17,6 @@ class UsuarioModel {
     }
 
 
-
-
-
-
     //Admin
     public function AgregarUsuario($user,$password){
         $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_user,password_user) VALUES (?,?)");

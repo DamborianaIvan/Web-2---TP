@@ -20,11 +20,14 @@
 <div>
     <a class="navbar-brand" href="{BASE_URL}/home">Tienda Online</a>
 </div>
+    {if (isset($smarty.session.User))}
         <div>
             <a class="nav-link bg-danger text-light" href="{BASE_URL}/logout">LOGOUT </a> </div>
+    {else}
         <div>
             <a class="nav-link bg-danger text-light" href="{BASE_URL}/login">INGRESAR </a>
         </div>
+    {/if}   
 <div>
     <p class="fecha">1/9/2020</p>
     <p class="ubicacion">Tandil, Argentina</p>
