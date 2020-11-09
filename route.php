@@ -2,14 +2,6 @@
     require_once "Controllers\HomeController.php";
     require_once "Controllers\ProductosPageController.php";
     require_once "Controllers\LoginController.php";
-    require_once "Controllers\ProductosAdminController.php";
-    // require_once "Controllers\GaleriaController.php";
-    // require_once "Controllers\MenuController.php";
-    // require_once "Controllers\ContactoController.php";
-    // require_once "Controllers\RegistroController.php";
-    // require_once "Controllers\CategoriaController.php";
-    // require_once "Controllers\LoginController.php";
-   
     $action = $_GET["action"];
     
     define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']));
@@ -43,40 +35,40 @@
             $controller = new LoginController();
             $controller->VerificarLogin();
         }elseif ($partesURL[0]== "productosAdmin") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->GetProductos();
         }elseif ($partesURL[0] == "editar") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->GetEditProductos($partesURL[1]);
         }elseif ($partesURL[0] == "editarProducto") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->EditarProducto($partesURL[1]);
         }elseif ($partesURL[0]=="eliminarProd") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->BorrarProducto($partesURL[1]);
         }elseif ($partesURL[0]=="logout"){
             $controller = new LoginController();
             $controller->Logout();
         }elseif ($partesURL[0]=="agregarprod") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->GetCreateProducto();
         }elseif ($partesURL[0]=="insertarnuevo") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->AgregarProducto();
         }elseif ($partesURL[0]=="agregarcategoria") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->GetCreateCategoria();
          }elseif ($partesURL[0]=="insertarcategoria") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->InsertarCat();
         }elseif ($partesURL[0]=="editarcategorias") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->GetEditCategorias();
         }elseif ($partesURL[0]=="editarcategoria") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->EditarCategoria($partesURL[1]);
         }elseif ($partesURL[0]=="eliminarcategoria") {
-            $controller = new ProductosAdminController();
+            $controller = new ProductosPageController();
             $controller->BorrarCategoria($partesURL[1]);
         }
     }
