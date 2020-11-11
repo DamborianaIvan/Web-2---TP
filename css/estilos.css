@@ -1,3 +1,6 @@
+body{
+    background-color: #f2f2f2;
+}
 .banner {
     height: 500px;
     background-attachment: fixed;
@@ -5,8 +8,6 @@
     background-repeat: no-repeat;
     background-image: url(../img/home/banner.jpg);
 }
-
-
 .redes-sociales {
     font-size: 40px;
 }
@@ -23,6 +24,10 @@
 footer p {
     font-size: 20px;
     font-weight: bold;
+}
+footer{
+    margin: 0 auto;
+    padding: 0px;
 }
 .ubicacion{
     font-weight: bold;
@@ -45,20 +50,21 @@ footer p {
 	transition: .3s ease-in-out; 
 }
 
-.lista-cat{
+.lista-nav{
     margin: 30px;
     border: 2px solid black;
     list-style: none;
     padding: 10px;
 }
-.lista-cat li a{
+.lista-nav li a{
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
 }
-.lista-cat li a:hover{
+.lista-nav li a:hover{
     color: wheat;
     background-color: #17a3b860;
     -webkit-transition: .3s ease-in-out;

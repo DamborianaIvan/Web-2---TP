@@ -11,14 +11,14 @@
         <div class="row mt-5 justify-content-center justify-content-around">
             {foreach from=$Productos item=$Producto}
                 {if $Producto.estado_prod=== "Oferta"}
-                    <div class="col-3">
-                        <div class="card mb-3">     
+                    <div class="col-3 ">
+                        <div class="card mb-3 border border-dark bg-success">     
                             <div class="card-body">
-                                <h5 class="card-title">{$Producto.nombre_prod}</h5>
+                                <h5 class="card-title text-uppercase">{$Producto.nombre_prod}</h5>
                                 <p class="card-text">{$Producto.descripcion_prod}</p>
                                 <p class="card-text">${$Producto.precio_prod}</p>
                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a href="{BASE_URL}/productos/{$Producto.id_producto}" class="btn btn-primary">Mostrar mas</a>
+                                    <a href="{BASE_URL}/productos/{$Producto.id_producto}" class="btn btn-primary text-uppercase p-1">Mostrar mas</a>
                                 </div>
                             </div>
                         </div>

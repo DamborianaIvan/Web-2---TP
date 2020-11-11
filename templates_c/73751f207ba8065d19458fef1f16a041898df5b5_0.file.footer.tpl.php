@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-15 22:17:38
+/* Smarty version 3.1.34-dev-7, created on 2020-11-09 19:33:41
   from 'D:\xampp\htdocs\Web-2---TP\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f88ae62ee2d37_70223095',
+  'unifunc' => 'content_5fa98b852d4d68_74643796',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73751f207ba8065d19458fef1f16a041898df5b5' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\footer.tpl',
-      1 => 1602793054,
+      1 => 1604946819,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f88ae62ee2d37_70223095 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fa98b852d4d68_74643796 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer class="container-fluid border border-primary mt-3 bg-dark text-white">
 <div class="redes-sociales mt-4 d-flex justify-content-around">
     <a href="#"><i class="fa fa-instagram"></i></a>

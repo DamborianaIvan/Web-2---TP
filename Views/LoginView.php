@@ -13,6 +13,10 @@
             $this->Smarty->display('templates/login.tpl');
 
         }
+        public function DisplayRegistro($Mensaje = ''){
+            $this->Smarty->assign('Mensaje', $Mensaje);
+            $this->Smarty->display('templates/registro.tpl');
+        }
     }
 
 ?>

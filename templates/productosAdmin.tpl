@@ -7,7 +7,7 @@
             <a href="{BASE_URL}/editarcategorias" class="btn btn-primary  mt-5">Editar Categoria</a>
         </div>    
         <div class="container">
-            <ul class="d-flex justify-content-between lista-cat">
+            <ul class=" d-flex justify-content-between border border-dark rounded p-2 text-uppercase text-center lista-nav">
                 <li><a href="{BASE_URL}/productos">Todos</a></li>
                 {foreach from=$Categorias item=$Categoria}
                     <li>
@@ -23,7 +23,7 @@
     <div class="row justify-content-around mt-4">      
             {foreach from=$Productos item=$Producto}        
                     <div class="col-4">
-                        <div class="card mb-3 text-center">
+                        <div class="card mb-3 text-center border border-dark ">
                             <img  class="card-img-top" alt="Imagen-{$Producto.nombre_prod}">         
                             <div class="card-body">
                                 <h5 class="card-title">{$Producto.nombre_prod}</h5>

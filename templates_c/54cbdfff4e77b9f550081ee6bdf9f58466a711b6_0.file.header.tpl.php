@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-09 15:29:56
+/* Smarty version 3.1.34-dev-7, created on 2020-11-11 14:37:02
   from 'D:\xampp\htdocs\Web-2---TP\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fa95264319a98_38415396',
+  'unifunc' => 'content_5fabe8fea83334_76877667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '54cbdfff4e77b9f550081ee6bdf9f58466a711b6' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\header.tpl',
-      1 => 1604932194,
+      1 => 1605101821,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fa95264319a98_38415396 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fabe8fea83334_76877667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -46,12 +46,17 @@ function content_5fa95264319a98_38415396 (Smarty_Internal_Template $_smarty_tpl)
 </div>
     <?php if (((isset($_SESSION['User'])))) {?>
         <div>
-            <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
-/logout">LOGOUT </a> </div>
+            <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
+/logout">LOGOUT </a> 
+        </div>
     <?php } else { ?>
         <div>
-            <a class="nav-link bg-danger text-light" href="<?php echo BASE_URL;?>
+            <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
 /login">INGRESAR </a>
+        </div>
+        <div>
+            <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
+/registro">REGISTRATE </a>
         </div>
     <?php }?>   
 <div>

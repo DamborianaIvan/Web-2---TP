@@ -23,6 +23,9 @@
                         <div class="row justify-content-center mt-3">
                             <p>{$Mensaje}</p>
                         </div>
+                        <div class="row justify-content-center mt-3">
+                            <a class="text-center" href="{BASE_URL}/registro">No tienes cuenta? Registrate</a>
+                        </div>
                         <div class="row d-flex justify-content-center mt-5 mb-5">
                             <div class="col-xs-4">
                                 <input type="submit" id="btn-enviar" class="btn btn-outline-primary ml-4"

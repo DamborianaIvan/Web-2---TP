@@ -4,8 +4,8 @@
     <div class="container text-center">
         <h3 class="mt-5">Categorias</h3>
         <div class="container">
-            <ul class="d-flex justify-content-between lista-cat">
-                <li><a href="{BASE_URL}/productos">Todos</a></li>
+            <ul class=" d-flex justify-content-between border border-dark rounded p-2 text-uppercase text-center lista-nav">
+                <li class="list-group list-style-none "><a class="" href="{BASE_URL}/productos">Todos</a></li>
                 {foreach from=$Categorias item=$Categoria}
                     <li><a href="{BASE_URL}/productosbycategoria/{$Categoria.id_cat}">{$Categoria.nombre_cat}</a></li>
                 {/foreach}
@@ -15,7 +15,7 @@
     <div class="row justify-content-around mt-4">      
             {foreach from=$Productos item=$Producto}                   
                     <div class="col-4">
-                        <div class="card bg-light mb-3 text-center">     
+                        <div class="card bg-light mb-3 text-center border border-dark ">     
                             <img  class="card-img-top" alt="Imagen-{$Producto.nombre_prod}">
                             <div class="card-body">
                                 <h5 class="card-title">{$Producto.nombre_prod}</h5>

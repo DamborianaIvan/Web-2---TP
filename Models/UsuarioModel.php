@@ -15,13 +15,10 @@ class UsuarioModel {
         $sentencia->execute(array($user));
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
-
-
     //Admin
-    public function AgregarUsuario($user,$password){
-        $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_user,password_user) VALUES (?,?)");
-        $sentencia->execute(array($user,$password));
+    public function AgregarUsuario($user,$password,$mail){
+        $sentencia = $this->db->prepare("INSERT INTO usuario(nombre_user,password_user,mail) VALUES (?,?,?)");
+        $sentencia->execute(array($user,$password,$mail));
     }
-
 }
 ?>
