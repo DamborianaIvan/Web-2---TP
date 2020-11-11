@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-10-16 18:53:55
+/* Smarty version 3.1.34-dev-7, created on 2020-11-11 18:59:11
   from 'C:\xamppp\htdocs\Web-2---TP\templates\productosAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f89d023b58610_84688183',
+  'unifunc' => 'content_5fac266f4d9288_79807340',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8a0e24a748a398a8a749b3a36c9a8380a7d6bf32' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\Web-2---TP\\templates\\productosAdmin.tpl',
-      1 => 1602867194,
+      1 => 1605101078,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f89d023b58610_84688183 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fac266f4d9288_79807340 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container mt-5 border border-dark bg-info">
@@ -34,7 +34,7 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
 /editarcategorias" class="btn btn-primary  mt-5">Editar Categoria</a>
         </div>    
         <div class="container">
-            <ul class="d-flex justify-content-between lista-cat">
+            <ul class=" d-flex justify-content-between border border-dark rounded p-2 text-uppercase text-center lista-nav">
                 <li><a href="<?php echo BASE_URL;?>
 /productos">Todos</a></li>
                 <?php
@@ -70,7 +70,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Producto']->valu
 $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>        
                     <div class="col-4">
-                        <div class="card mb-3 text-center">
+                        <div class="card mb-3 text-center border border-dark ">
                             <img  class="card-img-top" alt="Imagen-<?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 ">         
                             <div class="card-body">

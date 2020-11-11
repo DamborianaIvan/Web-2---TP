@@ -28,20 +28,21 @@ class LoginController{
     }
     //verifica un registro valido y no existente y lo envia a la bd
     public function registroUser(){
-        $pass = password_hash($_POST['newUserPass'], PASSWORD_DEFAULT);
-        $user= $_POST['newUserName'];
-        if((isset($user)) && (isset($pass))){
-            $dbUser = $this->modelUsuario->GetUser($user);
-            if(isset(($dbUser))&&($dbUser === $user)){
-                $this->view->DisplayLogin("El usuario ya existe");
-            }else{
-                $this->modelUsuario->AgregarUsuario($_POST['newUserName'],$pass,$_POST['newUserEmail']);
-                session_start();
-                $_SESSION["User"]= $user;                    
-                header(PRODUCTOS);
-            }   
+        if($_POST['newUserName'] && ($_POST['newUserPass'])){
+            $pass = password_hash($_POST['newUserPass'], PASSWORD_DEFAULT);
+            $user= $_POST['newUserName'];
+            $email=$_POST['newUserEmail'];
+                $dbUser = $this->modelUsuario->GetUser($user);
+                if(isset($dbUser)){
+                    $this->view->DisplayRegistro("El usuario ya existe.");
+                }else{
+                    $this->modelUsuario->AgregarUsuario($user,$pass,$email);
+                    session_start();
+                    $_SESSION["User"] = $user;                    
+                    header(PRODUCTOS);
+                }   
         }else{
-            header(LOGIN);
+            $this->view->DisplayRegistro("Complete todos los campos por favor.");
         }
     }
     //El logout es solo esto, despues se pone en un boton
