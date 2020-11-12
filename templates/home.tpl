@@ -12,7 +12,7 @@
             {foreach from=$Productos item=$Producto}
                 {if $Producto.estado_prod=== "Oferta"}
                     <div class="col-3 ">
-                        <div class="card mb-3 border border-dark bg-success">     
+                        <div class="card mb-3 border border-dark bg-warning">     
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase">{$Producto.nombre_prod}</h5>
                                 <p class="card-text">{$Producto.descripcion_prod}</p>

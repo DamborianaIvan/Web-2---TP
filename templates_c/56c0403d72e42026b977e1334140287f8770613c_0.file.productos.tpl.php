@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-11 14:37:02
+/* Smarty version 3.1.34-dev-7, created on 2020-11-12 16:50:31
   from 'D:\xampp\htdocs\Web-2---TP\templates\productos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fabe8fe945683_02274680',
+  'unifunc' => 'content_5fad59c7c52301_14397983',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56c0403d72e42026b977e1334140287f8770613c' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\productos.tpl',
-      1 => 1605101078,
+      1 => 1605196231,
       2 => 'file',
     ),
   ),
@@ -22,16 +22,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5fabe8fe945683_02274680 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fad59c7c52301_14397983 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<div class="container mt-5 border border-dark bg-info">
+<div class="container-fluid mt-5 border border-dark bg-dark text-white">
     <h1 class="text-center mt-5">Productos</h1>
     <div class="container text-center">
         <h3 class="mt-5">Categorias</h3>
-        <div class="container">
-            <ul class=" d-flex justify-content-between border border-dark rounded p-2 text-uppercase text-center lista-nav">
-                <li class="list-group list-style-none "><a class="" href="<?php echo BASE_URL;?>
+        <div class="container ">
+            <ul class=" d-flex justify-content-between border border-danger rounded p-2 list-unstyled text-uppercase text-center text-white lista-nav">
+                <li class="list-group text-ligth "><a class="text-warning" href="<?php echo BASE_URL;?>
 /productos">Todos</a></li>
                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Categorias']->value, 'Categoria');
@@ -39,7 +39,7 @@ $_smarty_tpl->tpl_vars['Categoria']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Categoria']->value) {
 $_smarty_tpl->tpl_vars['Categoria']->do_else = false;
 ?>
-                    <li><a href="<?php echo BASE_URL;?>
+                    <li><a class="text-white " href="<?php echo BASE_URL;?>
 /productosbycategoria/<?php echo $_smarty_tpl->tpl_vars['Categoria']->value['id_cat'];?>
 "><?php echo $_smarty_tpl->tpl_vars['Categoria']->value['nombre_cat'];?>
 </a></li>
@@ -57,10 +57,10 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Producto']->valu
 $_smarty_tpl->tpl_vars['Producto']->do_else = false;
 ?>                   
                     <div class="col-4">
-                        <div class="card bg-light mb-3 text-center border border-dark ">     
+                        <div class="card bg-light mb-3 text-center border border-danger ">     
                             <img  class="card-img-top" alt="Imagen-<?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 ">
-                            <div class="card-body">
+                            <div class="card-body text-white bg-secondary ">
                                 <h5 class="card-title"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['nombre_prod'];?>
 </h5>
                                 <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['Producto']->value['descripcion_prod'];?>

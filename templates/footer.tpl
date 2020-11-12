@@ -1,11 +1,11 @@
 <footer class="container-fluid border border-primary mt-3 bg-dark text-white">
 <div class="redes-sociales mt-4 d-flex justify-content-around">
     <a href="#"><i class="fa fa-instagram"></i></a>
-    <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>
+    <p class="text-center">Telofono: 2156406546</p>
+    <p class="text-center">Email: ventaderopa@ropaventa.com</p>
     <a class="text-end" href="#"><i class="fa fa-facebook"></i></a>
 </div>
-<p class="text-center">Telofono: 2156406546</p>
-<p class="text-center">Email: ventaderopa@ropaventa.com</p>
+    <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>
 </footer>
 
 

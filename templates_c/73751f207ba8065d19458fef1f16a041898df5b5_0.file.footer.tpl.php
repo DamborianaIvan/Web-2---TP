@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-09 19:33:41
+/* Smarty version 3.1.34-dev-7, created on 2020-11-12 16:36:14
   from 'D:\xampp\htdocs\Web-2---TP\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fa98b852d4d68_74643796',
+  'unifunc' => 'content_5fad566ebaa3c8_18590230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73751f207ba8065d19458fef1f16a041898df5b5' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\footer.tpl',
-      1 => 1604946819,
+      1 => 1605195373,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fa98b852d4d68_74643796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fad566ebaa3c8_18590230 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer class="container-fluid border border-primary mt-3 bg-dark text-white">
 <div class="redes-sociales mt-4 d-flex justify-content-around">
     <a href="#"><i class="fa fa-instagram"></i></a>
-    <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>
+    <p class="text-center">Telofono: 2156406546</p>
+    <p class="text-center">Email: ventaderopa@ropaventa.com</p>
     <a class="text-end" href="#"><i class="fa fa-facebook"></i></a>
 </div>
-<p class="text-center">Telofono: 2156406546</p>
-<p class="text-center">Email: ventaderopa@ropaventa.com</p>
+    <h4 class="text-center">Todos los Derechos Reservados<i class="fa fa-copyright"></i></h4>
 </footer>
 
 

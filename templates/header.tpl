@@ -17,25 +17,25 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info justify-content-center justify-content-between">
-            <div>
-                <a class="navbar-brand" href="{BASE_URL}/home">Tienda Online</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info border border-dark justify-content-between">
+            <div class="border border-dark rounded p-1 ">
+                <a class="navbar-brand text-uppercase text-warning ml-2" href="{BASE_URL}/home">Circo Shop</a>
             </div>
-        
+            {* {if $smarty.session.User} *}
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/logout">LOGOUT </a>
             </div>
-            
+            {* {else} *}
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/login">INGRESAR </a>
             </div>
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/registro">REGISTRATE </a>
             </div>
-          
+            {* {/if} *}
             <div>
                 <p class="fecha">1/9/2020</p>
-                <p class="ubicacion">Tandil, Argentina</p>
+                 <p class="ubicacion">Tandil, Argentina</p>
             </div>
         </nav>
         <div class="navbar">
