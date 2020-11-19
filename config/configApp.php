@@ -22,6 +22,6 @@ class ConfigApp{
         'editarcategorias'=>'EditarCategoria',
         'eliminarcategoria'=>'BorrarCategoria',
         'registro'=>'GetRegistro',
-        'crearUsuario'=>'registroUser'
+        'crearUsuario'=>'registroUser',
     ];
 }

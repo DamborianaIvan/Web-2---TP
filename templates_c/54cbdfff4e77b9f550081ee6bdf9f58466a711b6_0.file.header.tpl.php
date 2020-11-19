@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-12 16:53:58
+/* Smarty version 3.1.34-dev-7, created on 2020-11-18 16:50:11
   from 'D:\xampp\htdocs\Web-2---TP\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fad5a96993db4_65327055',
+  'unifunc' => 'content_5fb542b3f3e583_64849579',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '54cbdfff4e77b9f550081ee6bdf9f58466a711b6' => 
     array (
       0 => 'D:\\xampp\\htdocs\\Web-2---TP\\templates\\header.tpl',
-      1 => 1605196435,
+      1 => 1605714611,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fad5a96993db4_65327055 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb542b3f3e583_64849579 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -45,11 +45,13 @@ function content_5fad5a96993db4_65327055 (Smarty_Internal_Template $_smarty_tpl)
                 <a class="navbar-brand text-uppercase text-warning ml-2" href="<?php echo BASE_URL;?>
 /home">Circo Shop</a>
             </div>
-                        <div>
+            
+            <div>
                 <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
 /logout">LOGOUT </a>
             </div>
-                        <div>
+            
+            <div>
                 <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
 /login">INGRESAR </a>
             </div>
@@ -57,7 +59,8 @@ function content_5fad5a96993db4_65327055 (Smarty_Internal_Template $_smarty_tpl)
                 <a class="nav-link bg-danger text-light rounded" href="<?php echo BASE_URL;?>
 /registro">REGISTRATE </a>
             </div>
-                        <div>
+            
+            <div>
                 <p class="fecha">1/9/2020</p>
                  <p class="ubicacion">Tandil, Argentina</p>
             </div>

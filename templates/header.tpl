@@ -21,18 +21,18 @@
             <div class="border border-dark rounded p-1 ">
                 <a class="navbar-brand text-uppercase text-warning ml-2" href="{BASE_URL}/home">Circo Shop</a>
             </div>
-            {* {if $smarty.session.User} *}
+            
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/logout">LOGOUT </a>
             </div>
-            {* {else} *}
+            
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/login">INGRESAR </a>
             </div>
             <div>
                 <a class="nav-link bg-danger text-light rounded" href="{BASE_URL}/registro">REGISTRATE </a>
             </div>
-            {* {/if} *}
+            
             <div>
                 <p class="fecha">1/9/2020</p>
                  <p class="ubicacion">Tandil, Argentina</p>

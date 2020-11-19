@@ -44,7 +44,8 @@ class ProductosPageController {
     public function GetProductosCat($id_categoria){
         $productos = $this->modelProductos->GetProductosByCat($id_categoria);     
         $categorias = $this->modelCategorias->GetCategorias();
-        $this->viewProductos->DisplayProductosPage($productos,$categorias);     
+        $this->viewProductos->DisplayProductosPage($productos,$categorias);  
+       
     }
 
     //Obtengo un prducto x id de la base de datos y los envio a la vista

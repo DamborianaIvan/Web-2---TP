@@ -43,10 +43,6 @@ $r->addRoute("eliminarcategoria/:ID", "GET","ProductosAdminController","BorrarCa
 
 
 
-
-
-
-
 //ruta por defecto
 $r->setDefaultRoute("ProductosPageController", "GetHome");
 
