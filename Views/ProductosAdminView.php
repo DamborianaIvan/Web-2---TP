@@ -45,6 +45,18 @@ class ProductosAdminView {
 
         $this->Smarty->display('templates/editarCategoria.tpl');
     }
+
+
+    //Display del editar usuario, para cambiar prioridades
+    public function DisplayEditUser($Usuarios){ 
+
+        $this->Smarty->assign('Usuarios', $Usuarios);
+        
+        
+    
+
+        $this->Smarty->display('templates/editarUsuario.tpl');
+    }
 }
 
 ?>

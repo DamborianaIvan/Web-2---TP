@@ -18,6 +18,7 @@
             </ul>
             <a href="{BASE_URL}/agregarprod" class="btn btn-primary mr-3 ml-3">Agregar Producto</a>
             <a href="{BASE_URL}/agregarcategoria" class="btn btn-primary">Agregar Categoria</a>
+            <a href="{BASE_URL}/editarUsuario" class="btn btn-primary">Editar Usuario</a>
         </div>
     </div>
     <div class="row justify-content-around mt-4">      

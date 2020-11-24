@@ -81,6 +81,13 @@
         }elseif ($partesURL[0]=="crearUsuario") {
             $controller = new LoginController();
             $controller->registroUser();
+        }elseif ($partesURL[0]=="editarUsuario"){
+            if (isset($partesURL[1])){
+                $controller = new ProductosAdminController();
+                $controller->EditarUsuario();
+            }
+            $controller = new ProductosAdminController();
+            $controller->GetEditUser();
         }
     }
     

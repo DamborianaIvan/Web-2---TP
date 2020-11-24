@@ -28,15 +28,15 @@ class LoginController{
     }
     //verifica un registro valido y no existente y lo envia a la bd
     public function registroUser(){
-        if($_POST['newUserName'] && ($_POST['newUserPass'])){
+        if($_POST['newUserName'] && $_POST['newUserPass']){
             $pass = password_hash($_POST['newUserPass'], PASSWORD_DEFAULT);
-            $user= $_POST['newUserName'];
-            $email=$_POST['newUserEmail'];
+            $user = $_POST['newUserName'];
+            $email = $_POST['newUserEmail'];
                 $dbUser = $this->modelUsuario->GetUser($user);
-                if(isset($dbUser)){
+                if(count($dbUser) > 0){
                     $this->view->DisplayRegistro("El usuario ya existe.");
                 }else{
-                    $this->modelUsuario->AgregarUsuario($user,$pass,$email);
+                    $this->modelUsuario->AgregarUsuarioNormal($user,$pass,$email);
                     session_start();
                     $_SESSION["User"] = $user;                    
                     header(PRODUCTOS);
