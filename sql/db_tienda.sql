@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 15, 2020 at 03:26 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.8
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 24-11-2020 a las 15:12:29
+-- Versión del servidor: 10.4.16-MariaDB
+-- Versión de PHP: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_tienda`
+-- Base de datos: `db_tienda`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categoria`
+-- Estructura de tabla para la tabla `categoria`
 --
 
 CREATE TABLE `categoria` (
@@ -33,13 +33,12 @@ CREATE TABLE `categoria` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `categoria`
+-- Volcado de datos para la tabla `categoria`
 --
 
 INSERT INTO `categoria` (`id_cat`, `nombre_cat`) VALUES
 (1, 'remera'),
 (2, 'pantalon '),
-(3, 'medias '),
 (4, 'gorras'),
 (5, 'camisa'),
 (6, 'ASD');
@@ -47,7 +46,7 @@ INSERT INTO `categoria` (`id_cat`, `nombre_cat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `producto`
+-- Estructura de tabla para la tabla `producto`
 --
 
 CREATE TABLE `producto` (
@@ -60,7 +59,7 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `producto`
+-- Volcado de datos para la tabla `producto`
 --
 
 INSERT INTO `producto` (`id_producto`, `nombre_prod`, `precio_prod`, `descripcion_prod`, `estado_prod`, `id_categoria`) VALUES
@@ -71,34 +70,41 @@ INSERT INTO `producto` (`id_producto`, `nombre_prod`, `precio_prod`, `descripcio
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE `usuario` (
   `id_user` int(11) NOT NULL,
   `nombre_user` varchar(50) NOT NULL,
-  `password_user` varchar(60) NOT NULL
+  `password_user` varchar(60) NOT NULL,
+  `mail_user` varchar(40) NOT NULL,
+  `prioridad_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id_user`, `nombre_user`, `password_user`) VALUES
-(1, 'admin', '$2y$10$iZHJhbij4E.G.xqY1OB/FeJCI31xe/MQpt2dTb8EQvFKtW3MkZ6ge');
+INSERT INTO `usuario` (`id_user`, `nombre_user`, `password_user`, `mail_user`, `prioridad_user`) VALUES
+(1, 'admin', '$2y$10$iZHJhbij4E.G.xqY1OB/FeJCI31xe/MQpt2dTb8EQvFKtW3MkZ6ge', 'admin@admin.com', 0),
+(2, 'admin1', '$2y$10$OXsCgaaZkzCGI.O/XkShEOwNZius.NGLRwpF47bvjf0J3mN1CANI2', 'admin1@admin1.com', 0),
+(13, 'luquitas', '$2y$10$cQhnR/mgZvQDF13vNjZFxuWP69TwSKSeJqs3IuxbJHSP5pnyMrtlq', 'claubibbo363@gmail.com', 0),
+(14, 'ivan', '$2y$10$iZBXpEXQSS/hJvFTOEtmpuend4Fzr/sz.50hYl0sdeDUJYi2tStsG', 'claubibbo363@gmail.com', 1),
+(15, 'javi', '$2y$10$Gt.n0XfY2bnrV4RHNkvGzuDyUptRW82TPPBtqScnXfm13bD2BRjkS', 'claubibbo363@gmail.com', 0),
+(16, 'admin3', '$2y$10$DcZ7v1KMeuIxLtTR9/mDn.j7fVeIuxUYECXmkRtBBWK2isPSs5nI6', 'admin3@gmail.com', 1);
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `categoria`
+-- Indices de la tabla `categoria`
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id_cat`);
 
 --
--- Indexes for table `producto`
+-- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
   ADD PRIMARY KEY (`id_producto`),
@@ -106,39 +112,39 @@ ALTER TABLE `producto`
   ADD KEY `id_producto` (`id_producto`) USING BTREE;
 
 --
--- Indexes for table `usuario`
+-- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `categoria`
+-- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
   MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `producto`
+-- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
   MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `producto`
+-- Filtros para la tabla `producto`
 --
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id_cat`);
